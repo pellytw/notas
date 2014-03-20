@@ -1,4 +1,4 @@
-<%= form_for(@documento) do |f| %>
+<%= form_for(@documento, :html => { :class => "form-horizontal"}) do |f| %>
   <% if @documento.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@documento.errors.count, "error") %> prohibited this documento from being saved:</h2>
@@ -11,13 +11,14 @@
     </div>
   <% end %>
 
+
   <table class="table table-bordered">
-    <tr>
-      <td>
+    <tr class="info">
+      <td colspan="4">
         <span class="label label-info">1. Datos principales del Documento</span>
       </td>
     </tr>
-    <tr>
+    <tr class="info">
       <td colspan="2">
         <b>Fecha Recepción: &nbsp;&nbsp;&nbsp;</b><%= f.datepicker :fecha_recepcion, :id => "datepicker" %>
       </td>
@@ -25,120 +26,118 @@
         <b>Fecha Documento: &nbsp;&nbsp;&nbsp;</b><%= f.datepicker :fecha_documento, :id => "datepicker2" %>
       </td>
     </tr>
-    <tr>
+    <tr class="info">
+      <td colspan="1" class="span1">
+        <b>Asunto: </b>
+      </td>
+      <td colspan="3">
+        <%= f.text_field :asunto, :class => "span9" %>
+      </td>
+    </tr>
+    <tr class="info">
+      <td colspan="1" class="span1">
+        <b>Iniciado por: </b>
+      </td>
+      <td colspan="3">
+        <%= f.text_field :iniciado_por, :class => "span9" %>
+      </td>
+    </tr>
+    <tr class="info">
+      <td colspan="2">
+        <b>Tipo Documento: </b>
+      </td>
+      <td colspan="1">
+        <%= f.collection_select(:tipo_documento_id, TipoDocumento.all, :id, :nombre) %>
+      </td>
+      <td>
+        <div class="row">
+          <div class="span6">
+            <b>Número: &nbsp;&nbsp;&nbsp;</b><%= f.text_field :nro_documento, :class => "span1" %>&nbsp;&nbsp;&nbsp;
+            <b>Sigla: &nbsp;&nbsp;&nbsp;</b><%= f.text_field :sigla, :class => "span1" %>&nbsp;&nbsp;&nbsp;
+            <b>Año: &nbsp;&nbsp;&nbsp;</b><%= f.number_field :anio, :class => "span1" %>&nbsp;&nbsp;&nbsp;
+          </div>
+        </div>
+      </td>
+    </tr>
+    <tr class="info">
       <td colspan="4">
-        <b>Asunto: &nbsp;&nbsp;&nbsp;</b><%= f.text_field :asunto, :class => "span11" %>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="4">
-        <b>Iniciado por: &nbsp;&nbsp;&nbsp;</b><%= f.number_field :iniciado_por, :class => "span10" %>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <b>Tipo de Documento: &nbsp;&nbsp;&nbsp;</b><%= f.collection_select(:tipo_documento_id, TipoDocumento.all, :id, :nombre) %>
-      </td>
-      <td>
-        <b>Número: &nbsp;&nbsp;&nbsp;</b>
-      </td>
-      <td>
-        <b>Sigla: &nbsp;&nbsp;&nbsp;</b>
-      </td>
-      <td>
-        <b>Año: &nbsp;&nbsp;&nbsp;</b>
-      </td>
-    </tr>
-    <tr>
-      <td>
         <b>ANEXO ver como lo hacemos</b>
       </td>
     </tr>
-    <tr>
-      <td>
-        <span class="label label-info">1. Detalle del Documento</span>
+    <tr class="info">
+      <td colspan="4">
+        <span class="label label-info">2. Detalle del Documento</span>
       </td>
     </tr>
-    <tr>
-      <td colspan="4">
-        <b>Procedencia: &nbsp;&nbsp;&nbsp;</b><%= f.collection_select(:tipo_documento_id, TipoDocumento.all, :id, :nombre) %>
+    <tr class="info">
+      <td colspan="1" class="span1">
+        <b>Procedencia: </b>
+      </td>
+      <td colspan="3">
+        <%= f.collection_select(:tipo_documento_id, TipoDocumento.all, :id, :nombre) %>
       </td>
     </tr>
-    <tr>
+    <tr class="info">
+      <td colspan="1" class="span1">
+        <b>Localidad: </b>
+      </td>
+      <td colspan="3">
+        <%= f.collection_select(:localidad_id, Localidad.all, :id, :nombre) %>
+      </td>
+    </tr>
+    <tr class="info">
+      <td colspan="1" class="span1">
+        <b>Nombres y Apellidos: </b>
+      </td>
+      <td colspan="3">
+        <%= f.text_field :nombres_y_apellidos %>
+      </td>
+    </tr>
+    <tr class="info">
       <td colspan="4">
-        <b>Localidad: &nbsp;&nbsp;&nbsp;</b><%= f.collection_select(:localidad_id, Localidad.all, :id, :nombre) %>
+        <span class="label label-info">3. Datos de Salida del Documento</span>
+      </td>
+    </tr>
+    <tr class="info">
+      <td colspan="4">
+        <b>Destinatario: </b><%= f.text_field :destinatario %>
+      </td>
+    </tr>
+    <tr class="info">
+      <td colspan="4">
+        <b>Autorizado: </b><%= f.check_box :autorizado %>
+      </td>
+    </tr>
+    <tr class="info">
+      <td colspan="1" class="span1">
+        <b>Número de Salida: </b>
+      </td>
+      <td colspan="3">
+        <%= f.text_field :nro_salida %>
+      </td>
+    </tr>
+    <tr class="info">
+      <td colspan="1" class="span1">
+        <b>Se encuentra en: </b>
+      </td>
+      <td colspan="3">
+        <%= f.number_field :se_encuentra_en %>
+      </td>
+    </tr>
+    <tr class="info">
+      <td colspan="1" class="span1">
+        <b>A los efectos de: </b>
+      </td>
+      <td colspan="3">
+        <%= f.text_field :motivo %>
+      </td>
+    </tr>
+    <tr class="info">
+      <td colspan="4">
+        <b>Observación: </b><%= f.text_area :observacion %>
       </td>
     </tr>
   </table>
-
-  <div class="field">
-    <%= f.label :nro_documento %><br />
-    <%= f.text_field :nro_documento %>
-  </div>
-  <div class="field">
-    <%= f.label :nro_salida %><br />
-    <%= f.text_field :nro_salida %>
-  </div>
-  <div class="field">
-    <%= f.label :asunto %><br />
-    <%= f.text_field :asunto %>
-  </div>
-  <div class="field">
-    <%= f.label :autorizado %><br />
-    <%= f.check_box :autorizado %>
-  </div>
-  <div class="field">
-    <%= f.label :observacion %><br />
-    <%= f.text_area :observacion %>
-  </div>
-  <div class="field">
-    <%= f.label :sigla %><br />
-    <%= f.text_field :sigla %>
-  </div>
-  <div class="field">
-    <%= f.label :anio %><br />
-    <%= f.number_field :anio %>
-  </div>
-  <div class="field">
-    <%= f.label :fecha_recepcion %><br />
-    <%= f.date_select :fecha_recepcion %>
-  </div>
-  <div class="field">
-    <%= f.label :fecha_documento %><br />
-    <%= f.date_select :fecha_documento %>
-  </div>
-  <div class="field">
-    <%= f.label :fecha_salida %><br />
-    <%= f.date_select :fecha_salida %>
-  </div>
-  <div class="field">
-    <%= f.label :tipo_documento_id %><br />
-    <%= f.number_field :tipo_documento_id %>
-  </div>
-  <div class="field">
-    <%= f.label :procedencia %><br />
-    <%= f.number_field :procedencia %>
-  </div>
-  <div class="field">
-    <%= f.label :nombres_y_apellidos %><br />
-    <%= f.text_field :nombres_y_apellidos %>
-  </div>
-  <div class="field">
-    <%= f.label :motivo %><br />
-    <%= f.text_field :motivo %>
-  </div>
-  <div class="field">
-    <%= f.label :destinatario %><br />
-    <%= f.number_field :destinatario %>
-  </div>
-  <div class="field">
-    <%= f.label :iniciado_por %><br />
-    <%= f.number_field :iniciado_por %>
-  </div>
-  <div class="field">
-    <%= f.label :se_encuentra_en %><br />
-    <%= f.number_field :se_encuentra_en %>
-  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
@@ -184,130 +183,3 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<%= form_for(@documento) do |f| %>
-  <% if @documento.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@documento.errors.count, "error") %> prohibited this documento from being saved:</h2>
-
-      <ul>
-      <% @documento.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :nro_documento %><br />
-    <%= f.text_field :nro_documento %>
-  </div>
-  <div class="field">
-    <%= f.label :nro_salida %><br />
-    <%= f.text_field :nro_salida %>
-  </div>
-  <div class="field">
-    <%= f.label :asunto %><br />
-    <%= f.text_field :asunto %>
-  </div>
-  <div class="field">
-    <%= f.label :autorizado %><br />
-    <%= f.check_box :autorizado %>
-  </div>
-  <div class="field">
-    <%= f.label :observacion %><br />
-    <%= f.text_area :observacion %>
-  </div>
-  <div class="field">
-    <%= f.label :sigla %><br />
-    <%= f.text_field :sigla %>
-  </div>
-  <div class="field">
-    <%= f.label :anio %><br />
-    <%= f.number_field :anio %>
-  </div>
-  <div class="field">
-    <%= f.label :fecha_recepcion %><br />
-    <%= f.date_select :fecha_recepcion %>
-  </div>
-  <div class="field">
-    <%= f.label :fecha_documento %><br />
-    <%= f.date_select :fecha_documento %>
-  </div>
-  <div class="field">
-    <%= f.label :fecha_salida %><br />
-    <%= f.date_select :fecha_salida %>
-  </div>
-  <div class="field">
-    <%= f.label :tipo_documento_id %><br />
-    <%= f.number_field :tipo_documento_id %>
-  </div>
-  <div class="field">
-    <%= f.label :procedencia %><br />
-    <%= f.text_field :procedencia %>
-  </div>
-  <div class="field">
-    <%= f.label :nombres_y_apellidos %><br />
-    <%= f.text_field :nombres_y_apellidos %>
-  </div>
-  <div class="field">
-    <%= f.label :motivo %><br />
-    <%= f.text_field :motivo %>
-  </div>
-  <div class="field">
-    <%= f.label :destinatario %><br />
-    <%= f.text_field :destinatario %>
-  </div>
-  <div class="field">
-    <%= f.label :iniciado_por %><br />
-    <%= f.text_field :iniciado_por %>
-  </div>
-  <div class="field">
-    <%= f.label :se_encuentra_en %><br />
-    <%= f.text_field :se_encuentra_en %>
-  </div>
-  <div class="field">
-    <%= f.label :localidad_id %><br />
-    <%= f.number_field :localidad_id %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
