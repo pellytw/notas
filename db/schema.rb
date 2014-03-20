@@ -13,13 +13,6 @@
 
 ActiveRecord::Schema.define(:version => 20140326113240) do
 
-  create_table "delegacion_administrativas", :force => true do |t|
-    t.string   "nombre"
-    t.integer  "localidad_id"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
-  end
-
   create_table "documento_anexos", :force => true do |t|
     t.string   "numero"
     t.integer  "anio"
@@ -60,7 +53,20 @@ ActiveRecord::Schema.define(:version => 20140326113240) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "localidads", :force => true do |t|
+    t.string   "nombre"
+    t.integer  "region_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "regiones", :force => true do |t|
+    t.string   "nombre"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "regions", :force => true do |t|
     t.string   "nombre"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
