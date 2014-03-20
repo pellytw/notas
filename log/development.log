@@ -54597,3 +54597,1874 @@ Served asset /application.js - 304 Not Modified (6ms)
 
 Started GET "/assets/documentos.js?body=1" for 127.0.0.1 at 2014-03-20 02:58:37 -0300
 Served asset /documentos.js - 304 Not Modified (0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/documentos/" for 127.0.0.1 at 2014-03-20 03:49:06 -0300
+Processing by DocumentosController#index as HTML
+  [1m[36mDocumento Load (0.3ms)[0m  [1mSELECT `documentos`.* FROM `documentos` [0m
+  Rendered documentos/index.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 476ms (Views: 391.5ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 03:49:06 -0300
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-03-20 03:49:07 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/documentos.css?body=1" for 127.0.0.1 at 2014-03-20 03:49:07 -0300
+Served asset /documentos.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui/ui-lightness.css?body=1" for 127.0.0.1 at 2014-03-20 03:49:07 -0300
+Served asset /jquery-ui/ui-lightness.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.css?body=1" for 127.0.0.1 at 2014-03-20 03:49:07 -0300
+Served asset /jquery-ui-timepicker-addon.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/tables.css?body=1" for 127.0.0.1 at 2014-03-20 03:49:07 -0300
+Served asset /tables.css - 304 Not Modified (18ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:07 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:07 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (63ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:07 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:07 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (14ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:07 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (20ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:07 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:07 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:07 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:07 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:07 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:07 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:07 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (16ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:07 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:07 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (18ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:07 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:07 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (30ms)
+
+
+Started GET "/assets/allPages.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:07 -0300
+Served asset /allPages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:07 -0300
+Served asset /jquery-ui.js - 304 Not Modified (114ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:07 -0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:07 -0300
+Served asset /application.js - 304 Not Modified (54ms)
+
+
+Started GET "/assets/documentos.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:07 -0300
+Served asset /documentos.js - 304 Not Modified (5ms)
+
+
+Started GET "/documentos/new" for 127.0.0.1 at 2014-03-20 03:49:12 -0300
+Processing by DocumentosController#new as HTML
+  [1m[35mTipoDocumento Load (0.4ms)[0m  SELECT `tipo_documentos`.* FROM `tipo_documentos` 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `tipo_documentos`.* FROM `tipo_documentos` [0m
+  [1m[35mLocalidad Load (0.1ms)[0m  SELECT `localidades`.* FROM `localidades` 
+  Rendered documentos/_form.html.erb (139.1ms)
+  Rendered documentos/new.html.erb within layouts/application (234.2ms)
+Completed 200 OK in 330ms (Views: 277.4ms | ActiveRecord: 15.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 03:49:13 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/documentos.css?body=1" for 127.0.0.1 at 2014-03-20 03:49:13 -0300
+Served asset /documentos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui/ui-lightness.css?body=1" for 127.0.0.1 at 2014-03-20 03:49:13 -0300
+Served asset /jquery-ui/ui-lightness.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.css?body=1" for 127.0.0.1 at 2014-03-20 03:49:13 -0300
+Served asset /jquery-ui-timepicker-addon.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tables.css?body=1" for 127.0.0.1 at 2014-03-20 03:49:13 -0300
+Served asset /tables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-03-20 03:49:13 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:13 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:13 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:13 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:13 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:13 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:13 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:13 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:13 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:13 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:13 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:13 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:13 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:13 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:13 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:13 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:13 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/allPages.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:13 -0300
+Served asset /allPages.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:13 -0300
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:13 -0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:13 -0300
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/documentos.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:13 -0300
+Served asset /documentos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at 2014-03-20 03:49:27 -0300
+Served asset /rails.png - 304 Not Modified (1ms)
+
+
+Started GET "/documentos/" for 127.0.0.1 at 2014-03-20 03:49:31 -0300
+Processing by DocumentosController#index as HTML
+  [1m[36mDocumento Load (4.3ms)[0m  [1mSELECT `documentos`.* FROM `documentos` [0m
+  Rendered documentos/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 35ms (Views: 29.4ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 03:49:31 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/documentos.css?body=1" for 127.0.0.1 at 2014-03-20 03:49:31 -0300
+Served asset /documentos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui/ui-lightness.css?body=1" for 127.0.0.1 at 2014-03-20 03:49:31 -0300
+Served asset /jquery-ui/ui-lightness.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.css?body=1" for 127.0.0.1 at 2014-03-20 03:49:31 -0300
+Served asset /jquery-ui-timepicker-addon.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tables.css?body=1" for 127.0.0.1 at 2014-03-20 03:49:32 -0300
+Served asset /tables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:32 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-03-20 03:49:32 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:32 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:32 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:32 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:32 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:32 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:32 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:32 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:32 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:32 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:32 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:32 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:32 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:32 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:32 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:32 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/allPages.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:32 -0300
+Served asset /allPages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:32 -0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:32 -0300
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:32 -0300
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/documentos.js?body=1" for 127.0.0.1 at 2014-03-20 03:49:32 -0300
+Served asset /documentos.js - 304 Not Modified (0ms)
+
+
+Started GET "/documentos/" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Processing by DocumentosController#index as HTML
+  [1m[35mDocumento Load (1.5ms)[0m  SELECT `documentos`.* FROM `documentos` 
+  Rendered documentos/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/documentos.css?body=1" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Served asset /documentos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui/ui-lightness.css?body=1" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Served asset /jquery-ui/ui-lightness.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.css?body=1" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Served asset /jquery-ui-timepicker-addon.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tables.css?body=1" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Served asset /tables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (52ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/allPages.js?body=1" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Served asset /allPages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/documentos.js?body=1" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Served asset /documentos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 03:52:25 -0300
+Served asset /application.js - 304 Not Modified (10ms)
+
+
+Started GET "/documentos/" for 127.0.0.1 at 2014-03-20 03:53:13 -0300
+Processing by DocumentosController#index as HTML
+  [1m[36mDocumento Load (0.1ms)[0m  [1mSELECT `documentos`.* FROM `documentos` [0m
+  Rendered documentos/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 32ms (Views: 31.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 03:53:13 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-03-20 03:53:13 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui/ui-lightness.css?body=1" for 127.0.0.1 at 2014-03-20 03:53:13 -0300
+Served asset /jquery-ui/ui-lightness.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.css?body=1" for 127.0.0.1 at 2014-03-20 03:53:13 -0300
+Served asset /jquery-ui-timepicker-addon.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tables.css?body=1" for 127.0.0.1 at 2014-03-20 03:53:13 -0300
+Served asset /tables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/documentos.css?body=1" for 127.0.0.1 at 2014-03-20 03:53:13 -0300
+Served asset /documentos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:13 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:13 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:13 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:13 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:13 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:13 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:14 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:14 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:14 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:14 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:14 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:14 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:14 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:14 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:14 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:14 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:14 -0300
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/allPages.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:14 -0300
+Served asset /allPages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/documentos.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:14 -0300
+Served asset /documentos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:14 -0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:14 -0300
+Served asset /application.js - 304 Not Modified (2ms)
+
+
+Started GET "/documentos/new" for 127.0.0.1 at 2014-03-20 03:53:20 -0300
+Processing by DocumentosController#new as HTML
+  [1m[35mTipoDocumento Load (0.1ms)[0m  SELECT `tipo_documentos`.* FROM `tipo_documentos` 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `tipo_documentos`.* FROM `tipo_documentos` [0m
+  [1m[35mLocalidad Load (4.1ms)[0m  SELECT `localidades`.* FROM `localidades` 
+  Rendered documentos/_form.html.erb (52.5ms)
+  Rendered documentos/new.html.erb within layouts/application (68.6ms)
+Completed 200 OK in 96ms (Views: 91.6ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 03:53:20 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/documentos.css?body=1" for 127.0.0.1 at 2014-03-20 03:53:20 -0300
+Served asset /documentos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui/ui-lightness.css?body=1" for 127.0.0.1 at 2014-03-20 03:53:20 -0300
+Served asset /jquery-ui/ui-lightness.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.css?body=1" for 127.0.0.1 at 2014-03-20 03:53:20 -0300
+Served asset /jquery-ui-timepicker-addon.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tables.css?body=1" for 127.0.0.1 at 2014-03-20 03:53:20 -0300
+Served asset /tables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-03-20 03:53:20 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:20 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:20 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:20 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:20 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:20 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:20 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:20 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:20 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:20 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:20 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:20 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:20 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:20 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:20 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:20 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (64ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:20 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/allPages.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:20 -0300
+Served asset /allPages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:20 -0300
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:21 -0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:21 -0300
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/documentos.js?body=1" for 127.0.0.1 at 2014-03-20 03:53:21 -0300
+Served asset /documentos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui/ui-lightness/ui-bg_highlight-soft_100_eeeeee_1x100.png" for 127.0.0.1 at 2014-03-20 03:56:20 -0300
+Served asset /jquery-ui/ui-lightness/ui-bg_highlight-soft_100_eeeeee_1x100.png - 200 OK (15ms)
+
+
+Started GET "/assets/jquery-ui/ui-lightness/ui-icons_ffffff_256x240.png" for 127.0.0.1 at 2014-03-20 03:56:20 -0300
+Served asset /jquery-ui/ui-lightness/ui-icons_ffffff_256x240.png - 200 OK (11ms)
+
+
+Started GET "/assets/jquery-ui/ui-lightness/ui-bg_gloss-wave_35_f6a828_500x100.png" for 127.0.0.1 at 2014-03-20 03:56:20 -0300
+Served asset /jquery-ui/ui-lightness/ui-bg_gloss-wave_35_f6a828_500x100.png - 200 OK (7ms)
+
+
+Started GET "/assets/jquery-ui/ui-lightness/ui-bg_highlight-soft_75_ffe45c_1x100.png" for 127.0.0.1 at 2014-03-20 03:56:20 -0300
+Served asset /jquery-ui/ui-lightness/ui-bg_highlight-soft_75_ffe45c_1x100.png - 200 OK (5ms)
+
+
+Started GET "/assets/jquery-ui/ui-lightness/ui-bg_glass_100_f6f6f6_1x400.png" for 127.0.0.1 at 2014-03-20 03:56:20 -0300
+Served asset /jquery-ui/ui-lightness/ui-bg_glass_100_f6f6f6_1x400.png - 200 OK (6ms)
+
+
+Started GET "/assets/jquery-ui/ui-lightness/ui-bg_glass_100_fdf5ce_1x400.png" for 127.0.0.1 at 2014-03-20 03:56:20 -0300
+Served asset /jquery-ui/ui-lightness/ui-bg_glass_100_fdf5ce_1x400.png - 200 OK (9ms)
+
+
+Started GET "/tipo_documentos" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Processing by TipoDocumentosController#index as HTML
+  [1m[36mTipoDocumento Load (1.7ms)[0m  [1mSELECT `tipo_documentos`.* FROM `tipo_documentos` [0m
+  Rendered tipo_documentos/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 100ms (Views: 97.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tables.css?body=1" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Served asset /tables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.css?body=1" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Served asset /jquery-ui-timepicker-addon.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tipo_documentos.css?body=1" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Served asset /tipo_documentos.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery-ui/ui-lightness.css?body=1" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Served asset /jquery-ui/ui-lightness.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/allPages.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Served asset /allPages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/tipo_documentos.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:49 -0300
+Served asset /tipo_documentos.js - 200 OK (1ms)
+
+
+Started GET "/tipo_documentos/new" for 127.0.0.1 at 2014-03-20 03:56:51 -0300
+Processing by TipoDocumentosController#new as HTML
+  Rendered tipo_documentos/_form.html.erb (10.5ms)
+  Rendered tipo_documentos/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 113ms (Views: 109.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 03:56:51 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-03-20 03:56:51 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui/ui-lightness.css?body=1" for 127.0.0.1 at 2014-03-20 03:56:51 -0300
+Served asset /jquery-ui/ui-lightness.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tipo_documentos.css?body=1" for 127.0.0.1 at 2014-03-20 03:56:51 -0300
+Served asset /tipo_documentos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.css?body=1" for 127.0.0.1 at 2014-03-20 03:56:51 -0300
+Served asset /jquery-ui-timepicker-addon.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tables.css?body=1" for 127.0.0.1 at 2014-03-20 03:56:51 -0300
+Served asset /tables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:51 -0300
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:51 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:51 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:51 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:51 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:51 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:51 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:51 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:51 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:51 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:51 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:51 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:51 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:51 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:51 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/allPages.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:51 -0300
+Served asset /allPages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:51 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:51 -0300
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:51 -0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:51 -0300
+Served asset /application.js - 304 Not Modified (11ms)
+
+
+Started GET "/assets/tipo_documentos.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:52 -0300
+Served asset /tipo_documentos.js - 304 Not Modified (0ms)
+
+
+Started POST "/tipo_documentos" for 127.0.0.1 at 2014-03-20 03:56:56 -0300
+Processing by TipoDocumentosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HqZlNjfVpbvIZBCKus8bgAsSQGkn9wJAB8G8A0SB3X0=", "tipo_documento"=>{"nombre"=>"nota"}, "commit"=>"Create Tipo documento"}
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (26.1ms)[0m  [1mINSERT INTO `tipo_documentos` (`created_at`, `nombre`, `updated_at`) VALUES ('2014-03-20 06:56:56', 'nota', '2014-03-20 06:56:56')[0m
+  [1m[35m (13.0ms)[0m  COMMIT
+Redirected to http://localhost:3000/tipo_documentos/1
+Completed 302 Found in 51ms (ActiveRecord: 39.2ms)
+
+
+Started GET "/tipo_documentos/1" for 127.0.0.1 at 2014-03-20 03:56:56 -0300
+Processing by TipoDocumentosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTipoDocumento Load (40.9ms)[0m  [1mSELECT `tipo_documentos`.* FROM `tipo_documentos` WHERE `tipo_documentos`.`id` = 1 LIMIT 1[0m
+  Rendered tipo_documentos/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 76ms (Views: 30.4ms | ActiveRecord: 40.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 03:56:56 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tipo_documentos.css?body=1" for 127.0.0.1 at 2014-03-20 03:56:56 -0300
+Served asset /tipo_documentos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui/ui-lightness.css?body=1" for 127.0.0.1 at 2014-03-20 03:56:56 -0300
+Served asset /jquery-ui/ui-lightness.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.css?body=1" for 127.0.0.1 at 2014-03-20 03:56:56 -0300
+Served asset /jquery-ui-timepicker-addon.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tables.css?body=1" for 127.0.0.1 at 2014-03-20 03:56:56 -0300
+Served asset /tables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-03-20 03:56:56 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:56 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:56 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:56 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:56 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:56 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:56 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:56 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:56 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:56 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:56 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:56 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:57 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:57 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:57 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:57 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:57 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/allPages.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:57 -0300
+Served asset /allPages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:57 -0300
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:57 -0300
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:57 -0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tipo_documentos.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:57 -0300
+Served asset /tipo_documentos.js - 304 Not Modified (0ms)
+
+
+Started GET "/documentos/new" for 127.0.0.1 at 2014-03-20 03:56:59 -0300
+Processing by DocumentosController#new as HTML
+  [1m[35mTipoDocumento Load (0.2ms)[0m  SELECT `tipo_documentos`.* FROM `tipo_documentos` 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `tipo_documentos`.* FROM `tipo_documentos` [0m
+  [1m[35mLocalidad Load (0.1ms)[0m  SELECT `localidades`.* FROM `localidades` 
+  Rendered documentos/_form.html.erb (46.2ms)
+  Rendered documentos/new.html.erb within layouts/application (46.8ms)
+Completed 200 OK in 66ms (Views: 65.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 03:56:59 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.css?body=1" for 127.0.0.1 at 2014-03-20 03:56:59 -0300
+Served asset /jquery-ui-timepicker-addon.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tables.css?body=1" for 127.0.0.1 at 2014-03-20 03:56:59 -0300
+Served asset /tables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-03-20 03:56:59 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:59 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/documentos.css?body=1" for 127.0.0.1 at 2014-03-20 03:56:59 -0300
+Served asset /documentos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui/ui-lightness.css?body=1" for 127.0.0.1 at 2014-03-20 03:56:59 -0300
+Served asset /jquery-ui/ui-lightness.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:59 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-03-20 03:56:59 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:00 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:00 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:00 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (72ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:00 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:00 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:00 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:00 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:00 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:00 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:00 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:00 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:00 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:00 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/allPages.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:00 -0300
+Served asset /allPages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:00 -0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:00 -0300
+Served asset /application.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:00 -0300
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/documentos.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:00 -0300
+Served asset /documentos.js - 304 Not Modified (0ms)
+
+
+Started POST "/documentos" for 127.0.0.1 at 2014-03-20 03:57:09 -0300
+Processing by DocumentosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HqZlNjfVpbvIZBCKus8bgAsSQGkn9wJAB8G8A0SB3X0=", "documento"=>{"nro_documento"=>"", "nro_salida"=>"", "asunto"=>"", "autorizado"=>"0", "observacion"=>"", "sigla"=>"", "anio"=>"", "fecha_recepcion(1i)"=>"2014", "fecha_recepcion(2i)"=>"3", "fecha_recepcion(3i)"=>"20", "fecha_documento(1i)"=>"2014", "fecha_documento(2i)"=>"3", "fecha_documento(3i)"=>"20", "fecha_salida(1i)"=>"2014", "fecha_salida(2i)"=>"3", "fecha_salida(3i)"=>"20", "tipo_documento_id"=>"", "procedencia"=>"", "nombres_y_apellidos"=>"", "motivo"=>"", "destinatario"=>"", "iniciado_por"=>"", "se_encuentra_en"=>"", "localidad_id"=>""}, "commit"=>"Create Documento"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (9.8ms)[0m  INSERT INTO `documentos` (`anio`, `asunto`, `autorizado`, `created_at`, `destinatario`, `fecha_documento`, `fecha_recepcion`, `fecha_salida`, `iniciado_por`, `localidad_id`, `motivo`, `nombres_y_apellidos`, `nro_documento`, `nro_salida`, `observacion`, `procedencia`, `se_encuentra_en`, `sigla`, `tipo_documento_id`, `updated_at`) VALUES (NULL, '', 0, '2014-03-20 06:57:09', '', '2014-03-20', '2014-03-20', '2014-03-20', '', NULL, '', '', '', '', '', '', '', '', NULL, '2014-03-20 06:57:09')
+  [1m[36m (5.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/documentos/1
+Completed 302 Found in 40ms (ActiveRecord: 15.5ms)
+
+
+Started GET "/documentos/1" for 127.0.0.1 at 2014-03-20 03:57:09 -0300
+Processing by DocumentosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mDocumento Load (1.6ms)[0m  SELECT `documentos`.* FROM `documentos` WHERE `documentos`.`id` = 1 LIMIT 1
+  Rendered documentos/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 46ms (Views: 39.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 03:57:09 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/documentos.css?body=1" for 127.0.0.1 at 2014-03-20 03:57:09 -0300
+Served asset /documentos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui/ui-lightness.css?body=1" for 127.0.0.1 at 2014-03-20 03:57:09 -0300
+Served asset /jquery-ui/ui-lightness.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.css?body=1" for 127.0.0.1 at 2014-03-20 03:57:09 -0300
+Served asset /jquery-ui-timepicker-addon.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tables.css?body=1" for 127.0.0.1 at 2014-03-20 03:57:09 -0300
+Served asset /tables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-03-20 03:57:09 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:09 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:09 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:09 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:09 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:09 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:09 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:09 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:09 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:09 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:09 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:09 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:09 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:09 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:09 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:09 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:09 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/allPages.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:10 -0300
+Served asset /allPages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:10 -0300
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:10 -0300
+Served asset /application.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:10 -0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/documentos.js?body=1" for 127.0.0.1 at 2014-03-20 03:57:10 -0300
+Served asset /documentos.js - 304 Not Modified (0ms)
+
+
+Started GET "/documentos/" for 127.0.0.1 at 2014-03-20 03:57:16 -0300
+Processing by DocumentosController#index as HTML
+  [1m[36mDocumento Load (0.3ms)[0m  [1mSELECT `documentos`.* FROM `documentos` [0m
+  Rendered documentos/index.html.erb within layouts/application (88.0ms)
+Completed 500 Internal Server Error in 91ms
+
+ActionView::Template::Error (undefined local variable or method `documentos' for #<#<Class:0x00000004b384a0>:0x007fccfc090f80>):
+    34:         <% if documento.procedencia.length > 70 then %>
+    35:             <a href="<%= url_for :controller => "documentos", :action => "show", :id => documentos.id %>"><%= documentos.procedencia[0..70].html_safe + "..." %></a>
+    36:         <% else %>
+    37:             <a href="<%= url_for :controller => "documentos", :action => "show", :id => documentos.id %>"><%= documentos.procedencia.html_safe %></a>
+    38:           <% end %>
+    39:     </td>
+    40:     <td>
+  app/views/documentos/index.html.erb:37:in `block in _app_views_documentos_index_html_erb___427649775518758746_38090760'
+  app/views/documentos/index.html.erb:30:in `each'
+  app/views/documentos/index.html.erb:30:in `_app_views_documentos_index_html_erb___427649775518758746_38090760'
+  app/controllers/documentos_controller.rb:7:in `index'
+
+
+  Rendered /home/ivana/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /home/ivana/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (10.4ms)
+  Rendered /home/ivana/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (20.8ms)
+
+
+Started GET "/documentos/" for 127.0.0.1 at 2014-03-20 03:57:58 -0300
+Processing by DocumentosController#index as HTML
+  [1m[35mDocumento Load (0.1ms)[0m  SELECT `documentos`.* FROM `documentos` 
+  Rendered documentos/index.html.erb within layouts/application (11.2ms)
+Completed 500 Internal Server Error in 20ms
+
+ActionView::Template::Error (undefined local variable or method `documentos' for #<#<Class:0x00000004b384a0>:0x000000051be400>):
+    34:         <% if documento.procedencia.length > 70 then %>
+    35:             <a href="<%= url_for :controller => "documentos", :action => "show", :id => documento.id %>"><%= documentos.procedencia[0..70].html_safe + "..." %></a>
+    36:         <% else %>
+    37:             <a href="<%= url_for :controller => "documentos", :action => "show", :id => documento.id %>"><%= documentos.procedencia.html_safe %></a>
+    38:           <% end %>
+    39:     </td>
+    40:     <td>
+  app/views/documentos/index.html.erb:37:in `block in _app_views_documentos_index_html_erb___427649775518758746_35382300'
+  app/views/documentos/index.html.erb:30:in `each'
+  app/views/documentos/index.html.erb:30:in `_app_views_documentos_index_html_erb___427649775518758746_35382300'
+  app/controllers/documentos_controller.rb:7:in `index'
+
+
+  Rendered /home/ivana/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.2ms)
+  Rendered /home/ivana/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/ivana/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.9ms)
+
+
+Started GET "/documentos/" for 127.0.0.1 at 2014-03-20 04:05:23 -0300
+Processing by DocumentosController#index as HTML
+  [1m[36mDocumento Load (0.9ms)[0m  [1mSELECT `documentos`.* FROM `documentos` [0m
+  Rendered documentos/index.html.erb within layouts/application (15.6ms)
+Completed 500 Internal Server Error in 19ms
+
+ActionView::Template::Error (undefined local variable or method `documentos' for #<#<Class:0x00000004b384a0>:0x007fcd080cada0>):
+    41:         <% if documento.asunto.length > 70 then %>
+    42:             <a href="<%= url_for :controller => "documentos", :action => "show", :id => documentos.id %>"><%= documento.asunto[0..70].html_safe + "..." %></a>
+    43:         <% else %>
+    44:             <a href="<%= url_for :controller => "documentos", :action => "show", :id => documentos.id %>"><%= documento.asunto.html_safe %></a>
+    45:           <% end %>
+    46:     </td>
+    47:     <td>
+  app/views/documentos/index.html.erb:44:in `block in _app_views_documentos_index_html_erb___427649775518758746_70259290033600'
+  app/views/documentos/index.html.erb:30:in `each'
+  app/views/documentos/index.html.erb:30:in `_app_views_documentos_index_html_erb___427649775518758746_70259290033600'
+  app/controllers/documentos_controller.rb:7:in `index'
+
+
+  Rendered /home/ivana/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.9ms)
+  Rendered /home/ivana/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/ivana/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (12.1ms)
+
+
+Started GET "/documentos/" for 127.0.0.1 at 2014-03-20 04:05:43 -0300
+Processing by DocumentosController#index as HTML
+  [1m[35mDocumento Load (0.5ms)[0m  SELECT `documentos`.* FROM `documentos` 
+  Rendered documentos/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 6ms
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Util):
+    53:     </td>
+    54:     <td><%= documento.nro_salida %></td>
+    55: 
+    56:     <td><%= Util.fecha_a_cadena(documento.fecha_recepcion) %></td>
+    57:     <td><%= Util.fecha_a_cadena(documento.fecha_salida) %></td>
+    58:  
+    59: 
+  app/views/documentos/index.html.erb:56:in `block in _app_views_documentos_index_html_erb___427649775518758746_70259326149140'
+  app/views/documentos/index.html.erb:30:in `each'
+  app/views/documentos/index.html.erb:30:in `_app_views_documentos_index_html_erb___427649775518758746_70259326149140'
+  app/controllers/documentos_controller.rb:7:in `index'
+
+
+  Rendered /home/ivana/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (11.0ms)
+  Rendered /home/ivana/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /home/ivana/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (21.0ms)
+
+
+Started GET "/documentos/" for 127.0.0.1 at 2014-03-20 04:06:48 -0300
+Processing by DocumentosController#index as HTML
+  [1m[36mDocumento Load (1.2ms)[0m  [1mSELECT `documentos`.* FROM `documentos` [0m
+  Rendered documentos/index.html.erb within layouts/application (58.9ms)
+Completed 500 Internal Server Error in 67ms
+
+ActionView::Template::Error (uninitialized constant ActionView::CompiledTemplates::Util):
+    53:     </td>
+    54:     <td><%= documento.nro_salida %></td>
+    55: 
+    56:     <td><%= Util.fecha_a_cadena(documento.fecha_recepcion) %></td>
+    57:     <td><%= Util.fecha_a_cadena(documento.fecha_salida) %></td>
+    58:  
+    59:         <td><%= link_to 'Ver', pedido, :class => "btn btn-success btn-mini" %></td>
+  app/views/documentos/index.html.erb:56:in `block in _app_views_documentos_index_html_erb___427649775518758746_70259122468340'
+  app/views/documentos/index.html.erb:30:in `each'
+  app/views/documentos/index.html.erb:30:in `_app_views_documentos_index_html_erb___427649775518758746_70259122468340'
+  app/controllers/documentos_controller.rb:7:in `index'
+
+
+  Rendered /home/ivana/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /home/ivana/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+  Rendered /home/ivana/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (24.6ms)
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (1.2ms)[0m  [1mSELECT `schema_migrations`.`version` FROM `schema_migrations` [0m
+Migrating to DeviseCreateUsers (20120201182115)
+Migrating to CreateRoles (20120224180650)
+Migrating to CreateRoleRoles (20120224181028)
+Migrating to CreateUserRoles (20120302182538)
+Migrating to CreateRolePermissions (20120410182942)
+Migrating to CreateLocalidads (20140325140658)
+Migrating to CreateTipoDocumentos (20140325141144)
+Migrating to CreateDocumentoAnexos (20140325143456)
+Migrating to CreateRegions (20140325143622)
+Migrating to CreateLocalidades (20140325144409)
+Migrating to CreateRegiones (20140325144459)
+Migrating to CreateDocumentos (20140326113240)
+Migrating to CreateUtils (20140326113241)
+  [1m[35m (45.7ms)[0m  CREATE TABLE `utils` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+  [1m[36m (1.5ms)[0m  [1mINSERT INTO `schema_migrations` (`version`) VALUES ('20140326113241')[0m
+  [1m[35m (0.1ms)[0m  SELECT `schema_migrations`.`version` FROM `schema_migrations` 
+Connecting to database specified by database.yml
+
+
+Started GET "/documentos/" for 127.0.0.1 at 2014-03-20 04:11:55 -0300
+Processing by DocumentosController#index as HTML
+  [1m[36mDocumento Load (0.1ms)[0m  [1mSELECT `documentos`.* FROM `documentos` [0m
+  Rendered documentos/index.html.erb within layouts/application (94.8ms)
+Completed 500 Internal Server Error in 252ms
+
+ActionView::Template::Error (undefined local variable or method `pedido' for #<#<Class:0x00000004ea8a18>:0x00000004eb40e8>):
+    57:     <td><%= Util.fecha_a_cadena(documento.fecha_salida) %></td>
+    58:  
+    59:         <td><%= link_to 'Ver', documento, :class => "btn btn-success btn-mini" %></td>
+    60:         <td><%= link_to 'Editar', edit_documento_path(pedido), :class => "btn btn-info btn-mini" %></td>
+    61:         <% if ((current_user.role? :admin) || (current_user.role? :delegacion)) then %>      
+    62:           <td><%= link_to 'Eliminar', documento, method: :delete, data: { confirm: 'Seguro desea eliminar?' }, :class => "btn btn-danger btn-mini" %></td>
+    63:         <% end %>
+  app/views/documentos/index.html.erb:60:in `block in _app_views_documentos_index_html_erb___1115763680097981214_40123120'
+  app/views/documentos/index.html.erb:30:in `each'
+  app/views/documentos/index.html.erb:30:in `_app_views_documentos_index_html_erb___1115763680097981214_40123120'
+  app/controllers/documentos_controller.rb:7:in `index'
+
+
+  Rendered /home/ivana/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /home/ivana/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /home/ivana/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (29.4ms)
+
+
+Started GET "/documentos/" for 127.0.0.1 at 2014-03-20 04:12:54 -0300
+Processing by DocumentosController#index as HTML
+  [1m[35mDocumento Load (1.4ms)[0m  SELECT `documentos`.* FROM `documentos` 
+  Rendered documentos/index.html.erb within layouts/application (85.3ms)
+Completed 500 Internal Server Error in 91ms
+
+ActionView::Template::Error (undefined method `role?' for nil:NilClass):
+    58:  
+    59:         <td><%= link_to 'Ver', documento, :class => "btn btn-success btn-mini" %></td>
+    60:         <td><%= link_to 'Editar', edit_documento_path(documento), :class => "btn btn-info btn-mini" %></td>
+    61:         <% if ((current_user.role? :admin) || (current_user.role? :delegacion)) then %>      
+    62:           <td><%= link_to 'Eliminar', documento, method: :delete, data: { confirm: 'Seguro desea eliminar?' }, :class => "btn btn-danger btn-mini" %></td>
+    63:         <% end %>
+    64:   </tr>
+  app/views/documentos/index.html.erb:61:in `block in _app_views_documentos_index_html_erb___1115763680097981214_38181360'
+  app/views/documentos/index.html.erb:30:in `each'
+  app/views/documentos/index.html.erb:30:in `_app_views_documentos_index_html_erb___1115763680097981214_38181360'
+  app/controllers/documentos_controller.rb:7:in `index'
+
+
+  Rendered /home/ivana/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /home/ivana/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /home/ivana/.rvm/gems/ruby-1.9.3-p448/gems/actionpack-3.2.8/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (15.8ms)
+
+
+Started GET "/documentos/" for 127.0.0.1 at 2014-03-20 04:13:37 -0300
+Processing by DocumentosController#index as HTML
+  [1m[36mDocumento Load (2.2ms)[0m  [1mSELECT `documentos`.* FROM `documentos` [0m
+  Rendered documentos/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 159ms (Views: 156.1ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 04:13:37 -0300
+Served asset /application.css - 304 Not Modified (61ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.css?body=1" for 127.0.0.1 at 2014-03-20 04:13:37 -0300
+Served asset /jquery-ui-timepicker-addon.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-03-20 04:13:37 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/tables.css?body=1" for 127.0.0.1 at 2014-03-20 04:13:37 -0300
+Served asset /tables.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui/ui-lightness.css?body=1" for 127.0.0.1 at 2014-03-20 04:13:37 -0300
+Served asset /jquery-ui/ui-lightness.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/documentos.css?body=1" for 127.0.0.1 at 2014-03-20 04:13:37 -0300
+Served asset /documentos.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 04:13:37 -0300
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 04:13:37 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-03-20 04:13:37 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-03-20 04:13:37 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-03-20 04:13:37 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-03-20 04:13:37 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-03-20 04:13:37 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-03-20 04:13:37 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (8ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-03-20 04:13:37 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-03-20 04:13:38 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-03-20 04:13:38 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-03-20 04:13:38 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (59ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-03-20 04:13:38 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-03-20 04:13:38 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-03-20 04:13:38 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-20 04:13:38 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (36ms)
+
+
+Started GET "/assets/allPages.js?body=1" for 127.0.0.1 at 2014-03-20 04:13:38 -0300
+Served asset /allPages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-03-20 04:13:38 -0300
+Served asset /jquery-ui.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2014-03-20 04:13:38 -0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 04:13:38 -0300
+Served asset /application.js - 304 Not Modified (30ms)
+
+
+Started GET "/assets/documentos.js?body=1" for 127.0.0.1 at 2014-03-20 04:13:38 -0300
+Served asset /documentos.js - 304 Not Modified (1ms)
+
+
+Started GET "/documentos/new" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Processing by DocumentosController#new as HTML
+  [1m[35mTipoDocumento Load (0.1ms)[0m  SELECT `tipo_documentos`.* FROM `tipo_documentos` 
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `tipo_documentos`.* FROM `tipo_documentos` [0m
+  [1m[35mLocalidad Load (0.1ms)[0m  SELECT `localidades`.* FROM `localidades` 
+  Rendered documentos/_form.html.erb (87.2ms)
+  Rendered documentos/new.html.erb within layouts/application (152.7ms)
+Completed 200 OK in 181ms (Views: 168.3ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/documentos.css?body=1" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Served asset /documentos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui/ui-lightness.css?body=1" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Served asset /jquery-ui/ui-lightness.css - 304 Not Modified (50ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.css?body=1" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Served asset /jquery-ui-timepicker-addon.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tables.css?body=1" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Served asset /tables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/allPages.js?body=1" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Served asset /allPages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/documentos.js?body=1" for 127.0.0.1 at 2014-03-20 04:14:00 -0300
+Served asset /documentos.js - 304 Not Modified (0ms)
+
+
+Started GET "/documentos/new" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Processing by DocumentosController#new as HTML
+  [1m[36mTipoDocumento Load (2.6ms)[0m  [1mSELECT `tipo_documentos`.* FROM `tipo_documentos` [0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `tipo_documentos`.* FROM `tipo_documentos` 
+  [1m[36mLocalidad Load (1.8ms)[0m  [1mSELECT `localidades`.* FROM `localidades` [0m
+  Rendered documentos/_form.html.erb (57.2ms)
+  Rendered documentos/new.html.erb within layouts/application (62.3ms)
+Completed 200 OK in 132ms (Views: 126.6ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui/ui-lightness.css?body=1" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Served asset /jquery-ui/ui-lightness.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.css?body=1" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Served asset /jquery-ui-timepicker-addon.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/tables.css?body=1" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Served asset /tables.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/documentos.css?body=1" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Served asset /documentos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/allPages.js?body=1" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Served asset /allPages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Served asset /twitter/bootstrap.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Served asset /jquery-ui.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/jquery-ui-timepicker-addon.js?body=1" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Served asset /jquery-ui-timepicker-addon.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Served asset /application.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/documentos.js?body=1" for 127.0.0.1 at 2014-03-20 04:16:39 -0300
+Served asset /documentos.js - 304 Not Modified (0ms)

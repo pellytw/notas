@@ -3,7 +3,7 @@
 <form class = "form-search" action="<%= url_for :controller => "documentos", :action => "index"%>">
 <div class="input-prepend">
   <button type="submit" class="btn btn">buscar</button>
-  <input type="text" name="q_nro_nota" placeholder="número de nota" class="span2">
+  <input type="text" name="q_nro_nota" placeholder="número de documento" class="span2">
 </div>
 </form>
 
@@ -12,56 +12,60 @@
 
 <table>
   <tr>
-    <th>Nro documento</th>
-    <th>Nro salida</th>
-    <th>Asunto</th>
-    <th>Autorizado</th>
-    <th>Observacion</th>
-    <th>Sigla</th>
-    <th>Anio</th>
-    <th>Fecha recepcion</th>
-    <th>Fecha documento</th>
-    <th>Fecha salida</th>
-    <th>Tipo documento</th>
+    <th>Nro Doc</th>
+    <th>Tipo Doc</th>
     <th>Procedencia</th>
-    <th>Nombres y apellidos</th>
-    <th>Motivo</th>
-    <th>Destinatario</th>
-    <th>Iniciado por</th>
-    <th>Se encuentra en</th>
-    <th>Localidad</th>
+    <th>Asunto</th>
+    <th>Apellidos y Nombres</th>
+    <th>Nro salida</th>
+    <th>Fecha recepcion</th>
+    <th>Fecha salida</th>
     <th></th>
     <th></th>
     <th></th>
   </tr>
 
+
+
 <% @documentos.each do |documento| %>
-  <tr>
     <td><%= documento.nro_documento %></td>
-    <td><%= documento.nro_salida %></td>
-    <td><%= documento.asunto %></td>
-    <td><%= documento.autorizado %></td>
-    <td><%= documento.observacion %></td>
-    <td><%= documento.sigla %></td>
-    <td><%= documento.anio %></td>
-    <td><%= documento.fecha_recepcion %></td>
-    <td><%= documento.fecha_documento %></td>
-    <td><%= documento.fecha_salida %></td>
     <td><%= documento.tipo_documento_id %></td>
-    <td><%= documento.procedencia %></td>
-    <td><%= documento.nombres_y_apellidos %></td>
-    <td><%= documento.motivo %></td>
-    <td><%= documento.destinatario %></td>
-    <td><%= documento.iniciado_por %></td>
-    <td><%= documento.se_encuentra_en %></td>
-    <td><%= documento.localidad_id %></td>
-    <td><%= link_to 'Show', documento %></td>
-    <td><%= link_to 'Edit', edit_documento_path(documento) %></td>
-    <td><%= link_to 'Destroy', documento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td>
+        <% if documento.procedencia.length > 70 then %>
+            <a href="<%= url_for :controller => "documentos", :action => "show", :id => documento.id %>"><%= documento.procedencia[0..70].html_safe + "..." %></a>
+        <% else %>
+            <a href="<%= url_for :controller => "documentos", :action => "show", :id => documento.id %>"><%= documento.procedencia.html_safe %></a>
+          <% end %>
+    </td>
+    <td>
+        <% if documento.asunto.length > 70 then %>
+            <a href="<%= url_for :controller => "documentos", :action => "show", :id => documento.id %>"><%= documento.asunto[0..70].html_safe + "..." %></a>
+        <% else %>
+            <a href="<%= url_for :controller => "documentos", :action => "show", :id => documento.id %>"><%= documento.asunto.html_safe %></a>
+          <% end %>
+    </td>
+    <td>
+        <% if documento.nombres_y_apellidos.length > 70 then %>
+            <a href="<%= url_for :controller => "documentos", :action => "show", :id => documento.id %>"><%= documento.nombres_y_apellidos[0..70].html_safe + "..." %></a>
+        <% else %>
+            <a href="<%= url_for :controller => "documentos", :action => "show", :id => documento.id %>"><%= documento.nombres_y_apellidos.html_safe %></a>
+          <% end %>
+    </td>
+    <td><%= documento.nro_salida %></td>
+
+    <td><%= Util.fecha_a_cadena(documento.fecha_recepcion) %></td>
+    <td><%= Util.fecha_a_cadena(documento.fecha_salida) %></td>
+ 
+        <td><%= link_to 'Ver', documento, :class => "btn btn-success btn-mini" %></td>
+        <td><%= link_to 'Editar', edit_documento_path(documento), :class => "btn btn-info btn-mini" %></td>
+     
+        <td><%= link_to 'Eliminar', documento, method: :delete, data: { confirm: 'Seguro desea eliminar?' }, :class => "btn btn-danger btn-mini" %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'Nuevo Documento', new_documento_path %>
+
+
+  <%= link_to 'Agregar Documento', new_documento_path, :class => "btn btn-success" %>
