@@ -1,0 +1,30 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1330108056.969643:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%5ec75a940ee85a5de4ba49d746713778I"logical_path;
+F"roles.jsI"pathname;
+FI"1$root/app/assets/javascripts/roles.js.coffee;
+FI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2012-02-24T13:06:51-05:00;
+FI"	body;
+FI"%(function() {
+
+
+
+}).call(this);
+;
+TI"asset_paths;
+F[I"1$root/app/assets/javascripts/roles.js.coffee;
+FI"dependency_paths;
+F[{I"	path;
+FI"1$root/app/assets/javascripts/roles.js.coffee;
+FI"
+mtime;
+FIu:	Time€I\3
+:@_zoneI"EST;
+T:nano_numi›:nano_deni:submicro"P:offsetiþ°¹I"hexdigest;
+F"%c12f0621e8cbf15a5c4dfa732f9f322aI"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

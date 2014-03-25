@@ -1,0 +1,21 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1334841598.064885:@value{	I"length:EFiI"digest;
+F"%06609c625c220725e5030b993de85433I"source;
+FI"/* 
+    Document   : roles
+    Created on : Apr 19, 2012, 9:12:58 AM
+    Author     : lynchcs
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+
+
+;
+FI"_version;
+F"%76164b7f714a9f97e2633f2befd0bd23

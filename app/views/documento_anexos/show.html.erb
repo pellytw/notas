@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Numero:</b>
+  <%= @documento_anexo.numero %>
+</p>
+
+<p>
+  <b>Anio:</b>
+  <%= @documento_anexo.anio %>
+</p>
+
+<p>
+  <b>Fecha:</b>
+  <%= @documento_anexo.fecha %>
+</p>
+
+<p>
+  <b>Tipo documento:</b>
+  <%= @documento_anexo.tipo_documento_id %>
+</p>
+
+<p>
+  <b>Documento:</b>
+  <%= @documento_anexo.documento_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_documento_anexo_path(@documento_anexo) %> |
+<%= link_to 'Back', documento_anexos_path %>

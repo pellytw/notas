@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  numero: MyString
+  anio: 1
+  fecha: 2014-03-25
+  tipo_documento_id: 1
+  documento_id: 1
+
+two:
+  numero: MyString
+  anio: 1
+  fecha: 2014-03-25
+  tipo_documento_id: 1
+  documento_id: 1

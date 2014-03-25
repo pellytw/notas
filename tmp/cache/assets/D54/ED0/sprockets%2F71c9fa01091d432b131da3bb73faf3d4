@@ -1,0 +1,64 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1336587578.1388001:@value{	I"length:EFiªI"digest;
+F"%52f622772baec47d86ff4fae0da015cdI"source;
+FI"ª/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+*/
+
+/* 
+    Document   : tables
+    Created on : Apr 19, 2012, 9:12:58 AM
+    Author     : lynchcs
+*/
+
+
+.showTableBorder {
+  border-style: solid;
+  border-color: Black;
+  border-left-width: .2em;
+  border-right-width: .2em;
+  border-top-width: .15em;
+  border-bottom-width: .15em;
+
+  padding: 0px;
+  margin: 0px;
+  border-collapse: 0px;
+  border-spacing: 0px;
+}
+
+.showTableBorder td, .showTableBorder th {
+  padding: .5em;
+}
+
+.showTableBorder tr {
+  border-style: solid;
+  border-color: Black;
+  border-width: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.showTableBorder th {
+  border-style: solid;
+  border-color: Black;
+  border-width: .05em;
+  border-bottom-width: .1em;
+}
+
+.showTableBorder td {
+  border-style: solid;
+  border-color: Black;
+  border-width: .05em;
+}
+
+.showTableBorder .firstCell {
+  border-left-width: 0px;
+}
+
+.showTableBorder .lastCell {
+  border-right-width: 0px;
+}
+;
+FI"_version;
+F"%734cee4f3727631ddaa70ec3f45cd5c7

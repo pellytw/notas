@@ -1,0 +1,31 @@
+<h1>Listing documento_anexos</h1>
+
+<table>
+  <tr>
+    <th>Numero</th>
+    <th>Anio</th>
+    <th>Fecha</th>
+    <th>Tipo documento</th>
+    <th>Documento</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @documento_anexos.each do |documento_anexo| %>
+  <tr>
+    <td><%= documento_anexo.numero %></td>
+    <td><%= documento_anexo.anio %></td>
+    <td><%= documento_anexo.fecha %></td>
+    <td><%= documento_anexo.tipo_documento_id %></td>
+    <td><%= documento_anexo.documento_id %></td>
+    <td><%= link_to 'Show', documento_anexo %></td>
+    <td><%= link_to 'Edit', edit_documento_anexo_path(documento_anexo) %></td>
+    <td><%= link_to 'Destroy', documento_anexo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Documento anexo', new_documento_anexo_path %>

@@ -1,0 +1,31 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1330441244.7317982:@value{	I"length:EFiŠI"digest;
+F"%9fc8d284aa887d07dbf292f1413a327cI"source;
+FI"Š/* 
+    Document   : main.css
+    Created on : Feb 27, 2012, 12:29:02 PM
+    Author     : lynchcs
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+
+.listNoDecorate {
+  list-style-type: none;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.roleDescription {
+  display:inline-block;
+}
+
+.roleCommands {
+  display:inline-block;
+  width: 30em;
+  min-width: 10em;
+  font-size: .75em;
+}
+;
+FI"_version;
+F"%646101e3034379480278d2f0c0b42a92

@@ -1,0 +1,39 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nro_documento: MyString
+  nro_salida: MyString
+  asunto: MyString
+  autorizado: false
+  observacion: MyText
+  sigla: MyString
+  anio: 1
+  fecha_recepcion: 2014-03-25
+  fecha_documento: 2014-03-25
+  fecha_salida: 2014-03-25
+  tipo_documento_id: 1
+  procedencia: 1
+  nombres_y_apellidos: MyString
+  motivo: MyString
+  destinatario: 1
+  iniciado_por: 1
+  se_encuentra_en: 1
+
+two:
+  nro_documento: MyString
+  nro_salida: MyString
+  asunto: MyString
+  autorizado: false
+  observacion: MyText
+  sigla: MyString
+  anio: 1
+  fecha_recepcion: 2014-03-25
+  fecha_documento: 2014-03-25
+  fecha_salida: 2014-03-25
+  tipo_documento_id: 1
+  procedencia: 1
+  nombres_y_apellidos: MyString
+  motivo: MyString
+  destinatario: 1
+  iniciado_por: 1
+  se_encuentra_en: 1

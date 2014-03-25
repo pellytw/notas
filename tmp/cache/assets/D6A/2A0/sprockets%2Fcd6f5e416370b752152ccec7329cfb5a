@@ -1,0 +1,51 @@
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1330441244.7252517:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%646101e3034379480278d2f0c0b42a92I"logical_path;
+F"roles/main.cssI"pathname;
+FI"0$root/app/assets/stylesheets/roles/main.css;
+FI"content_type;
+FI"text/css;
+FI"
+mtime;
+FI"2012-02-28T10:00:41-05:00;
+FI"	body;
+FI"ä/* 
+    Document   : main.css
+    Created on : Feb 27, 2012, 12:29:02 PM
+    Author     : lynchcs
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+
+.listNoDecorate {
+  list-style-type: none;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.roleDescription {
+  display:inline-block;
+}
+
+.roleCommands {
+  display:inline-block;
+  width: 30em;
+  min-width: 10em;
+  font-size: .75em;
+}
+;
+FI"asset_paths;
+F[I"0$root/app/assets/stylesheets/roles/main.css;
+FI"dependency_paths;
+F[{I"	path;
+FI"0$root/app/assets/stylesheets/roles/main.css;
+FI"
+mtime;
+FIu:	TimeèÄÍôô
+:@_zoneI"EST;
+T:nano_numiª:nano_deni:submicro"p:offseti˛∞πI"hexdigest;
+F"%479f52a45084729ed87e5d6ce78b9275I"_version;
+F"%46dde6621c301f4928e3b34efee9e3b5

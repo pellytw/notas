@@ -1,0 +1,90 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nro documento:</b>
+  <%= @documento.nro_documento %>
+</p>
+
+<p>
+  <b>Nro salida:</b>
+  <%= @documento.nro_salida %>
+</p>
+
+<p>
+  <b>Asunto:</b>
+  <%= @documento.asunto %>
+</p>
+
+<p>
+  <b>Autorizado:</b>
+  <%= @documento.autorizado %>
+</p>
+
+<p>
+  <b>Observacion:</b>
+  <%= @documento.observacion %>
+</p>
+
+<p>
+  <b>Sigla:</b>
+  <%= @documento.sigla %>
+</p>
+
+<p>
+  <b>Anio:</b>
+  <%= @documento.anio %>
+</p>
+
+<p>
+  <b>Fecha recepcion:</b>
+  <%= @documento.fecha_recepcion %>
+</p>
+
+<p>
+  <b>Fecha documento:</b>
+  <%= @documento.fecha_documento %>
+</p>
+
+<p>
+  <b>Fecha salida:</b>
+  <%= @documento.fecha_salida %>
+</p>
+
+<p>
+  <b>Tipo documento:</b>
+  <%= @documento.tipo_documento_id %>
+</p>
+
+<p>
+  <b>Procedencia:</b>
+  <%= @documento.procedencia %>
+</p>
+
+<p>
+  <b>Nombres y apellidos:</b>
+  <%= @documento.nombres_y_apellidos %>
+</p>
+
+<p>
+  <b>Motivo:</b>
+  <%= @documento.motivo %>
+</p>
+
+<p>
+  <b>Destinatario:</b>
+  <%= @documento.destinatario %>
+</p>
+
+<p>
+  <b>Iniciado por:</b>
+  <%= @documento.iniciado_por %>
+</p>
+
+<p>
+  <b>Se encuentra en:</b>
+  <%= @documento.se_encuentra_en %>
+</p>
+
+
+<%= link_to 'Edit', edit_documento_path(@documento) %> |
+<%= link_to 'Back', documentos_path %>
