@@ -19,6 +19,7 @@
     <th>Destinatario</th>
     <th>Iniciado por</th>
     <th>Se encuentra en</th>
+    <th>Localidad</th>
     <th></th>
     <th></th>
     <th></th>
@@ -43,6 +44,7 @@
     <td><%= documento.destinatario %></td>
     <td><%= documento.iniciado_por %></td>
     <td><%= documento.se_encuentra_en %></td>
+    <td><%= documento.localidad_id %></td>
     <td><%= link_to 'Show', documento %></td>
     <td><%= link_to 'Edit', edit_documento_path(documento) %></td>
     <td><%= link_to 'Destroy', documento, method: :delete, data: { confirm: 'Are you sure?' } %></td>

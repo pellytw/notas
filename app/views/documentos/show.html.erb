@@ -85,6 +85,11 @@
   <%= @documento.se_encuentra_en %>
 </p>
 
+<p>
+  <b>Localidad:</b>
+  <%= @documento.localidad_id %>
+</p>
+
 
 <%= link_to 'Edit', edit_documento_path(@documento) %> |
 <%= link_to 'Back', documentos_path %>

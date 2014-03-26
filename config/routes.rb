@@ -1,15 +1,13 @@
 Mysecurity::Application.routes.draw do
+  resources :documentos
+
   resources :regiones
 
   resources :localidades
 
   resources :documento_anexos
 
-  resources :documentos
-
   resources :tipo_documentos
-
-  resources :delegacion_administrativas
 
   resources :role_permissions
 

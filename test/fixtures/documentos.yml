@@ -8,16 +8,17 @@ one:
   observacion: MyText
   sigla: MyString
   anio: 1
-  fecha_recepcion: 2014-03-25
-  fecha_documento: 2014-03-25
-  fecha_salida: 2014-03-25
+  fecha_recepcion: 2014-03-26
+  fecha_documento: 2014-03-26
+  fecha_salida: 2014-03-26
   tipo_documento_id: 1
-  procedencia: 1
+  procedencia: MyString
   nombres_y_apellidos: MyString
   motivo: MyString
-  destinatario: 1
-  iniciado_por: 1
-  se_encuentra_en: 1
+  destinatario: MyString
+  iniciado_por: MyString
+  se_encuentra_en: MyString
+  localidad_id: 1
 
 two:
   nro_documento: MyString
@@ -27,13 +28,14 @@ two:
   observacion: MyText
   sigla: MyString
   anio: 1
-  fecha_recepcion: 2014-03-25
-  fecha_documento: 2014-03-25
-  fecha_salida: 2014-03-25
+  fecha_recepcion: 2014-03-26
+  fecha_documento: 2014-03-26
+  fecha_salida: 2014-03-26
   tipo_documento_id: 1
-  procedencia: 1
+  procedencia: MyString
   nombres_y_apellidos: MyString
   motivo: MyString
-  destinatario: 1
-  iniciado_por: 1
-  se_encuentra_en: 1
+  destinatario: MyString
+  iniciado_por: MyString
+  se_encuentra_en: MyString
+  localidad_id: 1

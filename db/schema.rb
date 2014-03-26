@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140325144459) do
+ActiveRecord::Schema.define(:version => 20140326113240) do
 
   create_table "delegacion_administrativas", :force => true do |t|
     t.string   "nombre"
@@ -42,12 +42,13 @@ ActiveRecord::Schema.define(:version => 20140325144459) do
     t.date     "fecha_documento"
     t.date     "fecha_salida"
     t.integer  "tipo_documento_id"
-    t.integer  "procedencia"
+    t.string   "procedencia"
     t.string   "nombres_y_apellidos"
     t.string   "motivo"
-    t.integer  "destinatario"
-    t.integer  "iniciado_por"
-    t.integer  "se_encuentra_en"
+    t.string   "destinatario"
+    t.string   "iniciado_por"
+    t.string   "se_encuentra_en"
+    t.integer  "localidad_id"
     t.datetime "created_at",          :null => false
     t.datetime "updated_at",          :null => false
   end
