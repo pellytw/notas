@@ -1,85 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1334843039.920451:@value{I"
-class:EFI"BundledAsset;
-FI"id;
-F"%94825943ac87dad3b4d60165a0575fc3I"logical_path;
-F"allPages.cssI"pathname;
-FI".$root/app/assets/stylesheets/allPages.css;
-FI"content_type;
-FI"text/css;
-FI"
-mtime;
-FI"2012-04-19T09:43:57-04:00;
-FI"	body;
-FI"/* 
-    Document   : roles
-    Created on : Apr 19, 2012, 9:12:58 AM
-    Author     : lynchcs
-    Description:
-        Purpose of the stylesheet follows.
-*/
-
-/* 
-   TODO customize this sample style
-   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
-*/
-
-
-.showTableBorder {
-  border-style: solid;
-  border-color: Black;
-  border-left-width: .2em;
-  border-right-width: .2em;
-  border-top-width: .15em;
-  border-bottom-width: .15em;
-
-  padding: 0px;
-  margin: 0px;
-  border-collapse: 0px;
-  border-spacing: 0px;
-}
-
-.showTableBorder td, .showTableBorder th {
-  padding: .5em;
-}
-
-.showTableBorder tr {
-  border-style: solid;
-  border-color: Black;
-  border-width: 0px;
-  padding: 0px;
-  margin: 0px;
-}
-
-.showTableBorder th {
-  border-style: solid;
-  border-color: Black;
-  border-width: .05em;
-  border-bottom-width: .1em;
-}
-
-.showTableBorder td {
-  border-style: solid;
-  border-color: Black;
-  border-width: .05em;
-}
-
-.showTableBorder .firstCell {
-  border-left-width: 0px;
-}
-
-.showTableBorder .lastCell {
-  border-right-width: 0px;
-}
-;
-FI"asset_paths;
-F[I".$root/app/assets/stylesheets/allPages.css;
-FI"dependency_paths;
-F[{I"	path;
-FI".$root/app/assets/stylesheets/allPages.css;
-FI"
-mtime;
-FIu:	Timem€áÙž¯
-:@_zoneI"EDT;
-T:nano_numiE:nano_deni:submicro"@:offsetiþÀÇI"hexdigest;
-F"%58276388a0f30f31b1c398847d30339cI"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5

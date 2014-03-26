@@ -1,30 +1,0 @@
-o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1334086000.2041292:@value{I"
-class:EFI"BundledAsset;
-FI"id;
-F"%a7905adbc381f6536bbd02be2b36aeb1I"logical_path;
-F"role_permissions.jsI"pathname;
-FI"<$root/app/assets/javascripts/role_permissions.js.coffee;
-FI"content_type;
-FI"application/javascript;
-FI"
-mtime;
-FI"2012-04-10T14:29:42-04:00;
-FI"	body;
-FI"%(function() {
-
-
-
-}).call(this);
-;
-TI"asset_paths;
-F[I"<$root/app/assets/javascripts/role_permissions.js.coffee;
-FI"dependency_paths;
-F[{I"	path;
-FI"<$root/app/assets/javascripts/role_permissions.js.coffee;
-FI"
-mtime;
-FIu:	TimeR€§Í«v
-:@_zoneI"EDT;
-T:nano_numiù:nano_deni:submicro"PP:offsetiþÀÇI"hexdigest;
-F"%c12f0621e8cbf15a5c4dfa732f9f322aI"_version;
-F"%46dde6621c301f4928e3b34efee9e3b5

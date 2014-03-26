@@ -11,14 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140326113240) do
-
-  create_table "delegacion_administrativas", :force => true do |t|
-    t.string   "nombre"
-    t.integer  "localidad_id"
-    t.datetime "created_at",   :null => false
-    t.datetime "updated_at",   :null => false
-  end
+ActiveRecord::Schema.define(:version => 20140326113241) do
 
   create_table "documento_anexos", :force => true do |t|
     t.string   "numero"
@@ -60,7 +53,20 @@ ActiveRecord::Schema.define(:version => 20140326113240) do
     t.datetime "updated_at", :null => false
   end
 
+  create_table "localidads", :force => true do |t|
+    t.string   "nombre"
+    t.integer  "region_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "regiones", :force => true do |t|
+    t.string   "nombre"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "regions", :force => true do |t|
     t.string   "nombre"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
@@ -117,5 +123,10 @@ ActiveRecord::Schema.define(:version => 20140326113240) do
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
+
+  create_table "utils", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
 end
