@@ -10,7 +10,6 @@
 
 <table class="table table-striped table-bordered">
 
-<table>
   <tr>
     <th>Nro Doc</th>
     <th>Tipo Doc</th>
@@ -25,18 +24,10 @@
     <th></th>
   </tr>
 
-
-
 <% @documentos.each do |documento| %>
     <td><%= documento.nro_documento %></td>
-    <td><%= documento.tipo_documento_id %></td>
-    <td>
-        <% if documento.procedencia.length > 70 then %>
-            <a href="<%= url_for :controller => "documentos", :action => "show", :id => documento.id %>"><%= documento.procedencia[0..70].html_safe + "..." %></a>
-        <% else %>
-            <a href="<%= url_for :controller => "documentos", :action => "show", :id => documento.id %>"><%= documento.procedencia.html_safe %></a>
-          <% end %>
-    </td>
+    <td><%= documento.tipo_documento%></td>
+    <td><%=documento.procedencia%></td>
     <td>
         <% if documento.asunto.length > 70 then %>
             <a href="<%= url_for :controller => "documentos", :action => "show", :id => documento.id %>"><%= documento.asunto[0..70].html_safe + "..." %></a>
@@ -64,7 +55,7 @@
 <% end %>
 </table>
 
-<br />
+<br/>
 
 
 
