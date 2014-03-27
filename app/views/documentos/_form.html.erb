@@ -1,4 +1,4 @@
-<%= form_for(@documento, :html => { :class => "form-horizontal"}) do |f| %>
+<%= nested_form_for(@documento, multipart: true, :html => { :class => "form-horizontal"}) do |f| %>
   <% if @documento.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@documento.errors.count, "error") %> prohibited this documento from being saved:</h2>
@@ -36,7 +36,7 @@
 #documento_tipo_documento_id{
   width: 150px;
 }
-h4{
+h4,h6{
   margin: 0px;
   padding: 0px;
 }
@@ -48,7 +48,7 @@ h4{
         <div class="span12">
             <span class="label label-info"><h4>1. Datos principales del Documento</h4></span>
         </div>
-      </div></br>
+      </div><hr/>
 
       <div class="row">
         <div class="span6">
@@ -79,18 +79,6 @@ h4{
           </div>
         </div>        
       </div>
-
-      <div class="row"> 
-        <div class="span12">
-          <div class="control-group success">
-            <label class="control-label"><strong>Iniciado por:</strong></label>
-            <div class="controls">
-              <%= f.text_field :iniciado_por, :style => "width:100%;" %>
-            </div>
-          </div>
-        </div>        
-      </div>
-
 
       <div class="row"> 
         <div class="span12">
@@ -139,22 +127,56 @@ h4{
         </div>           
       </div>
 
-      <div class="row"> 
+      <div class="row">
         <div class="span12">
+            <span class="label label-default"><h4>Anexo</h4></span>
+        </div>
+      </div><hr/>
+
+      <%= f.fields_for :documento_anexo do |da|%>
+      <div class="row"> 
+        <div class="span4">
           <div class="control-group success">
-            <label class="control-label"><strong>ANEXO ver como lo hacemos</strong></label>
+            <label class="control-label"><strong>Tipo Documento:</strong></label>
             <div class="controls">
-              <%= f.text_field :iniciado_por, :style => "width:100%;" %>
+              <%= da.collection_select(:tipo_documento_id, TipoDocumento.all, :id, :nombre) %>
             </div>
           </div>
-        </div>        
+        </div>
+        <div class="span3">
+          <div class="control-group success">
+            <label class="control-label"><strong>Número:</strong></label>
+            <div class="controls">
+              <%= da.text_field :numero, :style => "width:100%;" %>
+            </div>
+          </div>
+        </div>
+        <div class="span3">
+          <div class="control-group success">
+            <label class="control-label"><strong>Año:</strong></label>
+            <div class="controls">
+              <%= da.text_field :anio, :style => "width:100%;" %>
+            </div>
+          </div>
+        </div>
+        <div class="span2">
+          <%= da.link_to_remove "ELIMINAR ANEXO", :class => "label label-important" %>
+        </div> 
       </div>
+      <% end %>
+
+
+      <div class="row">
+        <div class="span12">
+          <span><%= f.link_to_add "AGREGAR ANEXO", :documento_anexo, :class => "label label-success" %></span>
+        </div>        
+      </div></br>  
 
       <div class="row">
         <div class="span12">
             <span class="label label-info"><h4>2. Detalle del Documento</h4></span>
         </div>
-      </div></br>
+      </div><hr/>
 
       <div class="row"> 
         <div class="span12">
@@ -193,7 +215,7 @@ h4{
         <div class="span12">
             <span class="label label-info"><h4>3. Datos de Salida del Documento</h4></span>
         </div>
-      </div></br>
+      </div><hr/>
 
       <div class="row"> 
         <div class="span12">
@@ -211,7 +233,7 @@ h4{
           <div class="control-group success">
             <label class="control-label"><strong>Autorizado:</strong></label>
             <div class="controls">
-              <%= f.text_field :autorizado, :style => "width:100%;" %>
+              <%= f.check_box :autorizado, :style => "width:100%;" %>
             </div>
           </div>
         </div>        
@@ -255,7 +277,7 @@ h4{
           <div class="control-group success">
             <label class="control-label"><strong>Observación:</strong></label>
             <div class="controls">
-              <%= f.text_field :observacion, :style => "width:100%;" %>
+              <%= f.text_area :observacion, :rows => "3", :style => "width:100%;" %>
             </div>
           </div>
         </div>        
@@ -264,7 +286,7 @@ h4{
     
   
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit :class => "btn btn-primary", :value => "Guardar" %>
   </div>
 
 <% end %>

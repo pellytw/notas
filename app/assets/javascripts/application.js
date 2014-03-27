@@ -10,3 +10,4 @@
 //= require allPages
 //= require jquery-ui
 //= require jquery-ui-timepicker-addon.js
+//= require jquery_nested_form
