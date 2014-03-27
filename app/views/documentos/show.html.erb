@@ -1,5 +1,287 @@
 <p id="notice"><%= notice %></p>
 
+
+  <style type="text/css">
+  .form-horizontal .control-label {
+      margin-left: -30px;
+  }
+  .form-horizontal .controls{
+      margin-right: 30px;
+  }
+  #documento_tipo_documento_id{
+    width: 150px;
+  }
+  h4,h6{
+    margin: 0px;
+    padding: 0px;
+  }
+  .controls {
+    padding-top: 5px;
+  }
+  </style>
+
+<form class="form-horizontal">
+
+  <div class="row">
+    <div class="span12">
+        <span class="label label-info"><h4>1. Datos principales del Documento</h4></span>
+    </div>
+  </div><hr/>
+
+  <div class="row">
+    <div class="span6">
+      <div class="control-group success">
+        <label class="control-label"><strong>Fecha Recepción:</strong></label>
+        <div class="controls">
+          <b> <%= @documento.fecha_recepcion %> </b>
+        </div>
+      </div>
+    </div>
+    <div class="span6">
+      <div class="control-group success">
+        <label class="control-label"><strong>Fecha Documento:</strong></label>
+        <div class="controls">
+         <b> <%= @documento.fecha_documento %> </b>
+        </div>
+      </div>
+    </div>        
+  </div>
+
+  <div class="row"> 
+    <div class="span12">
+      <div class="control-group success">
+        <label class="control-label"><strong>Asunto:</strong></label>
+        <div class="controls">
+          <b><%= @documento.asunto %></b>
+        </div>
+      </div>
+    </div>        
+  </div>
+
+  <div class="row"> 
+    <div class="span12">
+      <div class="control-group success">
+        <label class="control-label"><strong>Iniciado por:</strong></label>
+        <div class="controls">
+          <b><%= @documento.iniciado_por %></b>
+        </div>
+      </div>
+    </div>        
+  </div>
+
+
+  <div class="row"> 
+    <div class="span3">
+      <div class="control-group success">
+        <label class="control-label"><strong>Tipo Documento:</strong></label>
+        <div class="controls">
+          <b><%= @documento.tipo_documento %></b>
+        </div>
+      </div>
+    </div>
+    <div class="span3">
+      <div class="control-group success">
+        <label class="control-label"><strong>Número:</strong></label>
+        <div class="controls">
+          <b><%= @documento.nro_documento %></b>
+        </div>
+      </div>
+    </div>
+    <div class="span3">
+      <div class="control-group success">
+        <label class="control-label"><strong>Sigla:</strong></label>
+        <div class="controls">
+          <b><%= @documento.sigla %></b>
+        </div>
+      </div>
+    </div> 
+    <div class="span3">
+      <div class="control-group success">
+        <label class="control-label"><strong>Año:</strong></label>
+        <div class="controls">
+          <b><%= @documento.anio %></b>
+        </div>
+      </div>
+    </div>           
+  </div>
+
+  
+
+  <% if @documento.documento_anexo.count > 0 then %>
+
+      <div class="row">
+        <div class="span12">
+            <span class="label label-default"><h4>Anexo</h4></span>
+        </div>
+      </div><hr/>
+
+        <% @documento.documento_anexo.each do |da| %>
+
+          <div class="row"> 
+            <div class="span4">
+              <div class="control-group success">
+                <label class="control-label"><strong>Tipo Documento:</strong></label>
+                <div class="controls">
+                  <b><%= da.tipo_documento %></b>
+                </div>
+              </div>
+            </div>
+            <div class="span3">
+              <div class="control-group success">
+                <label class="control-label"><strong>Número:</strong></label>
+                <div class="controls">
+                  <b><%= da.numero %></b>
+                </div>
+              </div>
+            </div>
+            <div class="span3">
+              <div class="control-group success">
+                <label class="control-label"><strong>Año:</strong></label>
+                <div class="controls">
+                  <b><%= da.anio %></b>
+                </div>
+              </div>
+            </div>
+            <div class="span2">
+              
+            </div> 
+          </div>
+
+        <%end%>
+
+    <%end%>
+  
+
+
+  <div class="row">
+    <div class="span12">
+     
+    </div>        
+  </div></br>  
+
+  <div class="row">
+    <div class="span12">
+        <span class="label label-info"><h4>2. Detalle del Documento</h4></span>
+    </div>
+  </div><hr/>
+
+  <div class="row"> 
+    <div class="span12">
+      <div class="control-group success">
+        <label class="control-label"><strong>Procedencia:</strong></label>
+        <div class="controls">
+          <b><%= @documento.procedencia %></b>
+        </div>
+      </div>
+    </div>        
+  </div>
+
+  <div class="row"> 
+    <div class="span12">
+      <div class="control-group success">
+        <label class="control-label"><strong>Localidad:</strong></label>
+        <div class="controls">
+          <b><%= @documento.localidad %></b>
+        </div>
+      </div>
+    </div>        
+  </div>
+
+  <div class="row"> 
+    <div class="span12">
+      <div class="control-group success">
+        <label class="control-label"><strong>Nombres y Apellidos:</strong></label>
+        <div class="controls">
+          <b><%= @documento.nombres_y_apellidos %></b>
+        </div>
+      </div>
+    </div>        
+  </div>
+
+  <div class="row">
+    <div class="span12">
+        <span class="label label-info"><h4>3. Datos de Salida del Documento</h4></span>
+    </div>
+  </div><hr/>
+
+  <div class="row"> 
+    <div class="span12">
+      <div class="control-group success">
+        <label class="control-label"><strong>Destinatario:</strong></label>
+        <div class="controls">
+          <b><%= @documento.destinatario %></b>
+        </div>
+      </div>
+    </div>        
+  </div>
+
+  <div class="row"> 
+    <div class="span12">
+      <div class="control-group success">
+        <label class="control-label"><strong>Autorizado:</strong></label>
+        <div class="controls">
+          <b><%= @documento.autorizado %></b>
+        </div>
+      </div>
+    </div>        
+  </div>
+
+   <div class="row"> 
+    <div class="span12">
+      <div class="control-group success">
+        <label class="control-label"><strong>Número de Salida:</strong></label>
+        <div class="controls">
+          <b><%= @documento.nro_salida %></b>
+        </div>
+      </div>
+    </div>        
+  </div>
+
+  <div class="row"> 
+    <div class="span12">
+      <div class="control-group success">
+        <label class="control-label"><strong>Se encuentra en:</strong></label>
+        <div class="controls">
+          <b><%= @documento.se_encuentra_en %></b>
+        </div>
+      </div>
+    </div>        
+  </div>
+
+   <div class="row"> 
+    <div class="span12">
+      <div class="control-group success">
+        <label class="control-label"><strong>A los efectos de:</strong></label>
+        <div class="controls">
+          <b><%= @documento.motivo %></b>
+        </div>
+      </div>
+    </div>        
+  </div>
+
+  <div class="row"> 
+    <div class="span12">
+      <div class="control-group success">
+        <label class="control-label"><strong>Observación:</strong></label>
+        <div class="controls">
+          <b><%= @documento.observacion %></b>
+        </div>
+      </div>
+    </div>        
+  </div>
+
+</form>
+
+
+
+
+<!-- 
+
+
+
+
+
+
 <p>
   <b>Nro documento:</b>
   <%= @documento.nro_documento %>
@@ -88,7 +370,7 @@
 <p>
   <b>Localidad:</b>
   <%= @documento.localidad_id %>
-</p>
+</p> -->
 
 
 <%= link_to 'Edit', edit_documento_path(@documento) %> |
