@@ -10,137 +10,263 @@
       </ul>
     </div>
   <% end %>
-
-
-  <table class="table table-bordered">
-    <tr class="info">
-      <td colspan="4">
-        <span class="label label-info">1. Datos principales del Documento</span>
-      </td>
-    </tr>
-    <tr class="info">
-      <td colspan="2">
-        <b>Fecha Recepción: &nbsp;&nbsp;&nbsp;</b><%= f.datepicker :fecha_recepcion, :id => "datepicker" %>
-      </td>
-      <td colspan="2">
+<!--
+    <div class="row">
+      <div class="span12">
+        <span class="label label-info">1. Datos principales del Documento</span>  
+      </div>
+    </div>
+    <div class="row">
+      <div class="span6">
+        <b>Fecha Recepción: &nbsp;&nbsp;&nbsp;</b><%= f.datepicker :fecha_recepcion, :id => "datepicker", :style => "width:auto;" %>
+      </div>
+      <div class="span6">
         <b>Fecha Documento: &nbsp;&nbsp;&nbsp;</b><%= f.datepicker :fecha_documento, :id => "datepicker2" %>
-      </td>
-    </tr>
-    <tr class="info">
-      <td colspan="1" class="span1">
-        <b>Asunto: </b>
-      </td>
-      <td colspan="3">
-        <%= f.text_field :asunto, :class => "span9" %>
-      </td>
-    </tr>
-    <tr class="info">
-      <td colspan="1" class="span1">
-        <b>Iniciado por: </b>
-      </td>
-      <td colspan="3">
-        <%= f.text_field :iniciado_por, :class => "span9" %>
-      </td>
-    </tr>
-    <tr class="info">
-      <td colspan="2">
-        <b>Tipo Documento: </b>
-      </td>
-      <td colspan="1">
-        <%= f.collection_select(:tipo_documento_id, TipoDocumento.all, :id, :nombre) %>
-      </td>
-      <td>
-        <div class="row">
-          <div class="span6">
-            <b>Número: &nbsp;&nbsp;&nbsp;</b><%= f.text_field :nro_documento, :class => "span1" %>&nbsp;&nbsp;&nbsp;
-            <b>Sigla: &nbsp;&nbsp;&nbsp;</b><%= f.text_field :sigla, :class => "span1" %>&nbsp;&nbsp;&nbsp;
-            <b>Año: &nbsp;&nbsp;&nbsp;</b><%= f.number_field :anio, :class => "span1" %>&nbsp;&nbsp;&nbsp;
+      </div>
+    </div>
+-->
+
+<style type="text/css">
+.form-horizontal .control-label {
+    margin-left: -30px;
+}
+.form-horizontal .controls{
+    margin-right: 30px;
+}
+#documento_tipo_documento_id{
+  width: 150px;
+}
+h4{
+  margin: 0px;
+  padding: 0px;
+}
+</style>
+
+    
+
+      <div class="row">
+        <div class="span12">
+            <span class="label label-info"><h4>1. Datos principales del Documento</h4></span>
+        </div>
+      </div></br>
+
+      <div class="row">
+        <div class="span6">
+          <div class="control-group success">
+            <label class="control-label"><strong>Fecha Recepción:</strong></label>
+            <div class="controls">
+              <%= f.datepicker :fecha_recepcion, :id => "datepicker", :style => "width:100%;" %>
+            </div>
           </div>
         </div>
-      </td>
-    </tr>
-    <tr class="info">
-      <td colspan="4">
-        <b>ANEXO ver como lo hacemos</b>
-      </td>
-    </tr>
-    <tr class="info">
-      <td colspan="4">
-        <span class="label label-info">2. Detalle del Documento</span>
-      </td>
-    </tr>
-    <tr class="info">
-      <td colspan="1" class="span1">
-        <b>Procedencia: </b>
-      </td>
-      <td colspan="3">
-        <%= f.collection_select(:tipo_documento_id, TipoDocumento.all, :id, :nombre) %>
-      </td>
-    </tr>
-    <tr class="info">
-      <td colspan="1" class="span1">
-        <b>Localidad: </b>
-      </td>
-      <td colspan="3">
-        <%= f.collection_select(:localidad_id, Localidad.all, :id, :nombre) %>
-      </td>
-    </tr>
-    <tr class="info">
-      <td colspan="1" class="span1">
-        <b>Nombres y Apellidos: </b>
-      </td>
-      <td colspan="3">
-        <%= f.text_field :nombres_y_apellidos %>
-      </td>
-    </tr>
-    <tr class="info">
-      <td colspan="4">
-        <span class="label label-info">3. Datos de Salida del Documento</span>
-      </td>
-    </tr>
-    <tr class="info">
-      <td colspan="4">
-        <b>Destinatario: </b><%= f.text_field :destinatario %>
-      </td>
-    </tr>
-    <tr class="info">
-      <td colspan="4">
-        <b>Autorizado: </b><%= f.check_box :autorizado %>
-      </td>
-    </tr>
-    <tr class="info">
-      <td colspan="1" class="span1">
-        <b>Número de Salida: </b>
-      </td>
-      <td colspan="3">
-        <%= f.text_field :nro_salida %>
-      </td>
-    </tr>
-    <tr class="info">
-      <td colspan="1" class="span1">
-        <b>Se encuentra en: </b>
-      </td>
-      <td colspan="3">
-        <%= f.number_field :se_encuentra_en %>
-      </td>
-    </tr>
-    <tr class="info">
-      <td colspan="1" class="span1">
-        <b>A los efectos de: </b>
-      </td>
-      <td colspan="3">
-        <%= f.text_field :motivo %>
-      </td>
-    </tr>
-    <tr class="info">
-      <td colspan="4">
-        <b>Observación: </b><%= f.text_area :observacion %>
-      </td>
-    </tr>
-  </table>
+        <div class="span6">
+          <div class="control-group success">
+            <label class="control-label"><strong>Fecha Documento:</strong></label>
+            <div class="controls">
+              <%= f.datepicker :fecha_documento, :id => "datepicker2", :style => "width:100%;" %>
+            </div>
+          </div>
+        </div>        
+      </div>
+
+      <div class="row"> 
+        <div class="span12">
+          <div class="control-group success">
+            <label class="control-label"><strong>Asunto:</strong></label>
+            <div class="controls">
+              <%= f.text_field :asunto, :style => "width:100%;" %>
+            </div>
+          </div>
+        </div>        
+      </div>
+
+      <div class="row"> 
+        <div class="span12">
+          <div class="control-group success">
+            <label class="control-label"><strong>Iniciado por:</strong></label>
+            <div class="controls">
+              <%= f.text_field :iniciado_por, :style => "width:100%;" %>
+            </div>
+          </div>
+        </div>        
+      </div>
+
+
+      <div class="row"> 
+        <div class="span12">
+          <div class="control-group success">
+            <label class="control-label"><strong>Iniciado por:</strong></label>
+            <div class="controls">
+              <%= f.text_field :iniciado_por, :style => "width:100%;" %>
+            </div>
+          </div>
+        </div>        
+      </div>
+
+
+      <div class="row"> 
+        <div class="span3">
+          <div class="control-group success">
+            <label class="control-label"><strong>Tipo Documento:</strong></label>
+            <div class="controls">
+              <%= f.collection_select(:tipo_documento_id, TipoDocumento.all, :id, :nombre) %>
+            </div>
+          </div>
+        </div>
+        <div class="span3">
+          <div class="control-group success">
+            <label class="control-label"><strong>Número:</strong></label>
+            <div class="controls">
+              <%= f.text_field :nro_documento, :style => "width:100%;" %>
+            </div>
+          </div>
+        </div>
+        <div class="span3">
+          <div class="control-group success">
+            <label class="control-label"><strong>Sigla:</strong></label>
+            <div class="controls">
+              <%= f.text_field :sigla, :style => "width:100%;" %>
+            </div>
+          </div>
+        </div> 
+        <div class="span3">
+          <div class="control-group success">
+            <label class="control-label"><strong>Año:</strong></label>
+            <div class="controls">
+              <%= f.text_field :anio, :style => "width:100%;" %>
+            </div>
+          </div>
+        </div>           
+      </div>
+
+      <div class="row"> 
+        <div class="span12">
+          <div class="control-group success">
+            <label class="control-label"><strong>ANEXO ver como lo hacemos</strong></label>
+            <div class="controls">
+              <%= f.text_field :iniciado_por, :style => "width:100%;" %>
+            </div>
+          </div>
+        </div>        
+      </div>
+
+      <div class="row">
+        <div class="span12">
+            <span class="label label-info"><h4>2. Detalle del Documento</h4></span>
+        </div>
+      </div></br>
+
+      <div class="row"> 
+        <div class="span12">
+          <div class="control-group success">
+            <label class="control-label"><strong>Procedencia:</strong></label>
+            <div class="controls">
+              <%= f.text_field :procedencia, :style => "width:100%;" %>
+            </div>
+          </div>
+        </div>        
+      </div>
+
+      <div class="row"> 
+        <div class="span12">
+          <div class="control-group success">
+            <label class="control-label"><strong>Localidad:</strong></label>
+            <div class="controls">
+              <%= f.collection_select(:localidad_id, Localidad.all, :id, :nombre) %>
+            </div>
+          </div>
+        </div>        
+      </div>
+
+      <div class="row"> 
+        <div class="span12">
+          <div class="control-group success">
+            <label class="control-label"><strong>Nombres y Apellidos:</strong></label>
+            <div class="controls">
+              <%= f.text_field :nombres_y_apellidos, :style => "width:100%;" %>
+            </div>
+          </div>
+        </div>        
+      </div>
+
+      <div class="row">
+        <div class="span12">
+            <span class="label label-info"><h4>3. Datos de Salida del Documento</h4></span>
+        </div>
+      </div></br>
+
+      <div class="row"> 
+        <div class="span12">
+          <div class="control-group success">
+            <label class="control-label"><strong>Destinatario:</strong></label>
+            <div class="controls">
+              <%= f.text_field :destinatario, :style => "width:100%;" %>
+            </div>
+          </div>
+        </div>        
+      </div>
+
+      <div class="row"> 
+        <div class="span12">
+          <div class="control-group success">
+            <label class="control-label"><strong>Autorizado:</strong></label>
+            <div class="controls">
+              <%= f.text_field :autorizado, :style => "width:100%;" %>
+            </div>
+          </div>
+        </div>        
+      </div>
+
+       <div class="row"> 
+        <div class="span12">
+          <div class="control-group success">
+            <label class="control-label"><strong>Número de Salida:</strong></label>
+            <div class="controls">
+              <%= f.text_field :nro_salida, :style => "width:100%;" %>
+            </div>
+          </div>
+        </div>        
+      </div>
+
+      <div class="row"> 
+        <div class="span12">
+          <div class="control-group success">
+            <label class="control-label"><strong>Se encuentra en:</strong></label>
+            <div class="controls">
+              <%= f.text_field :se_encuentra_en, :style => "width:100%;" %>
+            </div>
+          </div>
+        </div>        
+      </div>
+
+       <div class="row"> 
+        <div class="span12">
+          <div class="control-group success">
+            <label class="control-label"><strong>A los efectos de:</strong></label>
+            <div class="controls">
+              <%= f.text_field :motivo, :style => "width:100%;" %>
+            </div>
+          </div>
+        </div>        
+      </div>
+
+      <div class="row"> 
+        <div class="span12">
+          <div class="control-group success">
+            <label class="control-label"><strong>Observación:</strong></label>
+            <div class="controls">
+              <%= f.text_field :observacion, :style => "width:100%;" %>
+            </div>
+          </div>
+        </div>        
+      </div>
+    
+    
+  
   <div class="actions">
     <%= f.submit %>
   </div>
+
 <% end %>
 
 
