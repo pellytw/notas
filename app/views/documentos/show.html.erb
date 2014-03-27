@@ -220,7 +220,11 @@
       <div class="control-group success">
         <label class="control-label"><strong>Autorizado:</strong></label>
         <div class="controls">
-          <b><%= @documento.autorizado %></b>
+          <% if @documento.autorizado == true %> 
+            <b>Si</b>
+          <% else %>
+            <b>No</b>
+          <% end %>    
         </div>
       </div>
     </div>        
