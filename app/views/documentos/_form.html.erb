@@ -1,7 +1,7 @@
 <%= nested_form_for(@documento, multipart: true, :html => { :class => "form-horizontal"}) do |f| %>
   <% if @documento.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@documento.errors.count, "error") %> prohibited this documento from being saved:</h2>
+      <h2><%= pluralize(@documento.errors.count, "error") %> Han ocurrido que no permiten guardar el Documento </h2>
 
       <ul>
       <% @documento.errors.full_messages.each do |msg| %>
@@ -33,7 +33,7 @@
 .form-horizontal .controls{
     margin-right: 30px;
 }
-#documento_tipo_documento_id{
+.select_tipo_documento{
   width: 150px;
 }
 h4,h6{
@@ -41,8 +41,6 @@ h4,h6{
   padding: 0px;
 }
 </style>
-
-    
 
       <div class="row">
         <div class="span12">
@@ -91,13 +89,12 @@ h4,h6{
         </div>        
       </div>
 
-
       <div class="row"> 
         <div class="span3">
           <div class="control-group success">
             <label class="control-label"><strong>Tipo Documento:</strong></label>
             <div class="controls">
-              <%= f.collection_select(:tipo_documento_id, TipoDocumento.all, :id, :nombre) %>
+              <%= f.collection_select(:tipo_documento_id, TipoDocumento.all, :id, :nombre, {}, {:class=>'select_tipo_documento'}) %>
             </div>
           </div>
         </div>
@@ -135,11 +132,11 @@ h4,h6{
 
       <%= f.fields_for :documento_anexo do |da|%>
       <div class="row"> 
-        <div class="span4">
+        <div class="span3">
           <div class="control-group success">
             <label class="control-label"><strong>Tipo Documento:</strong></label>
             <div class="controls">
-              <%= da.collection_select(:tipo_documento_id, TipoDocumento.all, :id, :nombre) %>
+              <%= da.collection_select(:tipo_documento_id, TipoDocumento.all, :id, :nombre, {}, {:class=>'select_tipo_documento'}) %>
             </div>
           </div>
         </div>
@@ -159,12 +156,11 @@ h4,h6{
             </div>
           </div>
         </div>
-        <div class="span2">
+        <div class="span3" style="text-align: right;">
           <%= da.link_to_remove "ELIMINAR ANEXO", :class => "label label-important" %>
         </div> 
       </div>
       <% end %>
-
 
       <div class="row">
         <div class="span12">
