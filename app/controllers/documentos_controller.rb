@@ -1,4 +1,6 @@
 class DocumentosController < ApplicationController
+  before_filter :authenticate_user!
+  load_and_authorize_resource 
   # GET /documentos
   # GET /documentos.json
   def index
@@ -57,9 +59,70 @@ class DocumentosController < ApplicationController
   # PUT /documentos/1.json
   def update
     @documento = Documento.find(params[:id])
+    @descripcion = ""
+    debugger
+    if @documento.fecha_recepcion.to_s != params[:documento][:fecha_recepcion] then
+      @descripcion << "fecha de recepcion - "
+    end
+    if @documento.fecha_documento.to_s != params[:documento][:fecha_documento] then
+      @descripcion << "fecha de documento - "
+    end
+    if @documento.nombres_y_apellidos != params[:documento][:nombres_y_apellidos] then
+      @descripcion << "nombres y apellidos - "
+    end
+    if @documento.anio.to_s != params[:documento][:anio] then
+      @descripcion << "anio - "
+    end
+    if @documento.asunto != params[:documento][:asunto] then
+      @descripcion << "asunto - "
+    end
+    if (@documento.autorizado == false) && (params[:documento][:autorizado] == "1") then
+      @descripcion << "autorizado - "
+    elsif (@documento.autorizado == true) && (params[:documento][:autorizado] == "0") then
+      @descripcion << "autorizado - "
+    end
+    if @documento.destinatario != params[:documento][:destinatario] then
+      @descripcion << "destinatario - "
+    end    
+    if @documento.iniciado_por != params[:documento][:iniciado_por] then
+      @descripcion << "iniciado por- "
+    end   
+    if @documento.localidad.id.to_s != params[:documento][:localidad_id] then
+      @descripcion << "localidad - "
+    end     
+    if @documento.motivo != params[:documento][:motivo] then
+      @descripcion << "motivo - "
+    end      
+    if @documento.nro_documento != params[:documento][:nro_documento] then
+      @descripcion << "nro documento - "
+    end     
+    if @documento.nro_salida != params[:documento][:nro_salida] then
+      @descripcion << "nro salida - "
+    end     
+    if @documento.observacion != params[:documento][:observacion] then
+      @descripcion << "observacion - "
+    end     
+    if @documento.procedencia != params[:documento][:procedencia] then
+      @descripcion << "procedencia - "
+    end     
+    if @documento.se_encuentra_en != params[:documento][:se_encuentra_en] then
+      @descripcion << "se encuenta en  - "
+    end
+    if @documento.sigla != params[:documento][:sigla] then
+      @descripcion << "sigla - "
+    end
+    if @documento.tipo_documento.id.to_s != params[:documento][:tipo_documento_id] then
+      @descripcion << "tipo documento - "
+    end
+
 
     respond_to do |format|
+
       if @documento.update_attributes(params[:documento])
+        if @descripcion != "" then
+          #debugger
+          Cambio.create(:user_id => current_user.id, :documento_id => @documento.id, :descripcion => @descripcion)
+        end
         format.html { redirect_to @documento, notice: 'Documento was successfully updated.' }
         format.json { head :no_content }
       else
