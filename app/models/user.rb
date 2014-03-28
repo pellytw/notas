@@ -7,12 +7,17 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
+  validates :apellidos, :presence => :true
+  validates :nombres, :presence => :true
+  def to_s
+    "#{self.nombres} #{self.apellidos}"
+  end
+
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me, :role_ids
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :role_ids, :nombres, :apellidos
 
   def role?(role)
     return !!self.roles.find_by_description(role.to_s.camelize)
   end
-
 
 end

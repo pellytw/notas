@@ -16,5 +16,7 @@ class Documento < ActiveRecord::Base
   validates :procedencia, :presence => true
   validates :localidad_id, :presence => true
 
+  has_many :cambios
+
 
 end
