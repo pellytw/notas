@@ -2,7 +2,7 @@
 PDFKit.configure do |config|
 #config.i18n.load_path += 
   #config.wkhtmltopdf = Dir[Rails.root.join('my', 'locales').to_s]
-  config.wkhtmltopdf = "/home/gaston/workspace-rails/notas/extras/wkhtmltopdf-i386"
+  config.wkhtmltopdf =   Rails.root.join('extras', 'wkhtmltopdf').to_s
   config.default_options = {
     :page_size => 'Legal',
     :print_media_type => true

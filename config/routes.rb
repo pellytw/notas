@@ -78,4 +78,7 @@ Mysecurity::Application.routes.draw do
 
   root :to => "documentos#index"
 
+  get "documentos/nota"
+  match 'documentos/nota/:idDocumento' => 'documentos#nota' 
+
 end
