@@ -62,4 +62,6 @@ gem 'therubyracer'
 # To use debugger
 gem 'debugger'
 
+gem 'pdfkit'
+
 #gem "sentry-raven", :git => "https://github.com/getsentry/raven-ruby.git"
