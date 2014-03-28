@@ -1,6 +1,6 @@
-<h1>Listing localidades</h1>
+<h1>Listado de Localidades</h1>
 
-<table>
+<table class="table table-striped table-bordered">
   <tr>
     <th>Nombre</th>
     <th>Region</th>
@@ -13,13 +13,13 @@
   <tr>
     <td><%= localidad.nombre %></td>
     <td><%= localidad.region_id %></td>
-    <td><%= link_to 'Show', localidad %></td>
-    <td><%= link_to 'Edit', edit_localidad_path(localidad) %></td>
-    <td><%= link_to 'Destroy', localidad, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Ver', localidad, :class => "btn btn-success btn-mini" %></td>
+    <td><%= link_to 'Editar', edit_localidad_path(localidad), :class => "btn btn-info btn-mini" %></td> 
+    <td><%= link_to 'Eliminar', localidad, method: :delete, data: { confirm: 'Seguro desea eliminar?' }, :class => "btn btn-danger btn-mini" %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Localidad', new_localidad_path %>
+<%= link_to 'Nueva Localidad', new_localidad_path, :class => "btn btn-success" %>

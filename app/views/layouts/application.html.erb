@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Proyecto</title>
+  <title>Sistemas de Notas</title>
   <%= stylesheet_link_tag    'application' %>
   <%= stylesheet_link_tag    params[:controller] %>
   <%= javascript_include_tag 'application' %>
@@ -19,22 +19,10 @@
       <ul class="nav" role="navigation">
        	
        	<% if user_signed_in? then %>
-       		<% if ((current_user.role? :admin) || (current_user.role? :jd_asig_fam) || (current_user.role? :asig_fam)) then %>
-	    	<li class="dropdown">
-	          <a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">Documentos <b class="caret"></b></a>
-	          <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
-	           	<li><%=link_to "documentos",  :tabindex => "-1"%></li>
-	          </ul>
-	        </li>
-	        <li class="dropdown">
-	          <a href="#" id="drop2" role="button" class="dropdown-toggle" data-toggle="dropdown">Configuraciones<b class="caret"></b></a>
-	          <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
-                <li><%= link_to "Tipos de documentos", :tabindex => "-1" %></li>
-                <li><%= link_to "Localidades", :tabindex => "-1" %></li>
-              </ul>
-	        </li>
-	        <% end %>
-        	
+       		<li><%= link_to "Tipos de documentos", tipo_documentos_path,  :tabindex => "-1" %></li>
+       		<li><%= link_to "Localidades", localidades_path,  :tabindex => "-1" %></li>
+       		<li><%= link_to "Regiones", regiones_path,  :tabindex => "-1" %></li>
+
         <!-- ACCESO ADMINISTRADOR-->
 	        <% if current_user.role? :admin then %>
 	        <li class="dropdown">

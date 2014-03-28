@@ -17,9 +17,9 @@
   </div>
   <div class="field">
     <%= f.label :region_id %><br />
-    <%= f.number_field :region_id %>
+    <%= f.collection_select(:region_id, Region.all, :id, :nombre) %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit  :class => "btn btn-primary", :value => "Guardar" %>
   </div>
 <% end %>
