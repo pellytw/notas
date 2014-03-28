@@ -1,6 +1,6 @@
-<h1>Listing regiones</h1>
+<h1>Listado de  Regiones</h1>
 
-<table>
+<table class="table table-striped table-bordered">
   <tr>
     <th>Nombre</th>
     <th></th>
@@ -11,13 +11,13 @@
 <% @regiones.each do |region| %>
   <tr>
     <td><%= region.nombre %></td>
-    <td><%= link_to 'Show', region %></td>
-    <td><%= link_to 'Edit', edit_region_path(region) %></td>
-    <td><%= link_to 'Destroy', region, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><%= link_to 'Ver', region, :class => "btn btn-success btn-mini" %></td>
+    <td><%= link_to 'Editar', edit_region_path(region), :class => "btn btn-info btn-mini" %></td> 
+    <td><%= link_to 'Eliminar', region, method: :delete, data: { confirm: 'Seguro desea eliminar?' }, :class => "btn btn-danger btn-mini" %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Region', new_region_path %>
+<%= link_to 'Nueva Región', new_region_path, :class => "btn btn-success" %>
