@@ -20,27 +20,38 @@
     <th>Fecha recepcion</th>
     <th>Fecha salida</th>
     <th></th>
-    <th></th>
-    <th></th>
-    <th></th>
+ 
   </tr>
 
 <% @documentos.each do |documento| %>
     <td><%= documento.nro_documento %></td>
     <td><%= documento.tipo_documento%></td>
-    <td><%=documento.procedencia%></td>
+    <td><%= documento.procedencia%></td>
     <td><%= documento.asunto%></td>
-    <td><%=documento.nombres_y_apellidos%></td>
+    <td><%= documento.nombres_y_apellidos%></td>
     <td><%= documento.nro_salida %></td>
 
     <td><%= Util.fecha_a_cadena(documento.fecha_recepcion) %></td>
     <td><%= Util.fecha_a_cadena(documento.fecha_salida) %></td>
- 
-        <td><%= link_to 'Ver', documento, :class => "btn btn-success btn-mini" %></td>
-        <td><%= link_to 'Editar', edit_documento_path(documento), :class => "btn btn-info btn-mini" %></td>
-     
-        <td><%= link_to 'Eliminar', documento, method: :delete, data: { confirm: 'Seguro desea eliminar?' }, :class => "btn btn-danger btn-mini" %></td>
-        <td><a href="/documentos/nota/<%= documento.id%>.pdf" >PDF</a></td>
+
+    <td>
+        <div class="btn-group">
+        <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+          Acciones
+          <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+          <li><%= link_to 'Ver', documento %></li>
+          <li><%= link_to 'Editar', edit_documento_path(documento) %></li>
+          <li><%= link_to 'Eliminar', documento, method: :delete, data: { confirm: 'Seguro desea eliminar?' } %></li>
+          <% if documento.fecha_salida == nil then %> 
+            <li><a href="/documentos/dar_salida/<%=documento.id%>" data-confirm="¿Seguro desea dar salida a la nota?">Dar Salida</a></li> 
+          <% else %>
+            <li><a href="/documentos/nota/<%= documento.id%>.pdf">PDF</a></li>
+          <% end %>
+        </ul>
+      </div>
+    </td>    
         
   </tr>
 <% end %>
@@ -49,3 +60,14 @@
 <br/>
 
   <%= link_to 'Agregar Documento', new_documento_path, :class => "btn btn-success" %>
+
+
+<script type="text/javascript">
+    $(function(){
+        $(document).ready(function(){
+            $(.boton_salida).click(){
+                
+            }
+        })
+    })
+</script>

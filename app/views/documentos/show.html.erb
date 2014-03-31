@@ -29,19 +29,27 @@
   </div><hr/>
 
   <div class="row">
-    <div class="span6">
+    <div class="span3">
       <div class="control-group success">
         <label class="control-label"><strong>Fecha Recepción:</strong></label>
         <div class="controls">
-          <b> <%= @documento.fecha_recepcion %> </b>
+          <b> <%= Util.fecha_a_es(@documento.fecha_recepcion) %> </b>          
         </div>
       </div>
     </div>
-    <div class="span6">
+    <div class="span3">
       <div class="control-group success">
         <label class="control-label"><strong>Fecha Documento:</strong></label>
         <div class="controls">
-         <b> <%= @documento.fecha_documento %> </b>
+         <b> <%= Util.fecha_a_es(@documento.fecha_documento) %> </b>
+        </div>
+      </div>
+    </div>
+    <div class="span3">
+      <div class="control-group success">
+        <label class="control-label"><strong>Fecha Salida:</strong></label>
+        <div class="controls">
+          <b> <%= Util.fecha_a_es(@documento.fecha_salida) %> </b>          
         </div>
       </div>
     </div>        
@@ -118,7 +126,7 @@
         <% @documento.documento_anexo.each do |da| %>
 
           <div class="row"> 
-            <div class="span4">
+            <div class="span3">
               <div class="control-group success">
                 <label class="control-label"><strong>Tipo Documento:</strong></label>
                 <div class="controls">
@@ -134,7 +142,7 @@
                 </div>
               </div>
             </div>
-            <div class="span3">
+            <div class="span6">
               <div class="control-group success">
                 <label class="control-label"><strong>Año:</strong></label>
                 <div class="controls">

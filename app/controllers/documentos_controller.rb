@@ -143,4 +143,19 @@ class DocumentosController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+
+  def dar_salida
+    @documento = Documento.find(params[:idDocumento])
+    @documento.fecha_salida = Time.now
+    if @documento.save then
+      #redirect_to @documento, notice: 'Se ha dado salida a la nota de manera correcta'
+      redirect_to "/documentos/nota/"+@documento.id.to_s+".pdf"
+
+    else
+
+    end 
+  end
+
+
 end

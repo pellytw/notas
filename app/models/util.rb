@@ -14,8 +14,7 @@ class Util
   		return I18n.l fecha
   	else
   		return ""
-  	end
-  	
+  	end  	
   end
 
 end
