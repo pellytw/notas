@@ -23,4 +23,7 @@
   #line_items {
     page-break-before: always;
   }
+  #navbar-example {
+    display: none;
+  }
 }

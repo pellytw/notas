@@ -1,29 +1,89 @@
+<style type="text/css">  
+  .control-group.success{
+  	height: 5px;
+  }
+  .texto{
+  	margin: 10px 10px 10px 10px;
+  }
+ </style>
 
 
 
+<% @documento = Documento.find(params["idDocumento"]) %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <link type="text/css" rel="stylesheet" href="{{ STATIC_URL }}css/formularios.css" media="screen">
-    </head>
-    <body>
-        <h3>asd</h3>
-        <h4>Altas</h4>
-        <table class="table table-bordered table-striped">
-            <tr><th>Agente</th><th>Fecha</th><th>Situación</th></tr>
-            asdsa
-        </table>
-        <h4>Licencias</h4>
-        <table class="table table-bordered table-striped">
-            <tr><th>Agente</th><th>Fecha</th><th>Finaliza</th><th>Licencia</th></tr>
-            asda
-        </table>
-        <h4>Bajas</h4>
-        <table class="table table-bordered table-striped">
-            <tr><th>Agente</th><th>Fecha</th></tr>
-           asds
-        </table>
-    </body>
-</html>
+
+	<div class="row">
+		<div class="span12">
+		  <div class="pull-right">
+		    <b> <%= @documento.fecha_recepcion %> </b>
+		  </div>
+		</div>		    
+	</div>
+	<div class="row">
+		<div class="span12">		 
+		    <b>REMITIR A:</b>		    	  
+		</div>		    
+	</div>
+	<div class="row">
+		<div class="span12">		    
+		    <b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= @documento.destinatario %> </b>		  
+		</div>		    
+	</div>
+	</br></br>
+	<div class="row">
+		<div class="span12">		 
+		    <b>A LOS EFECTOS DE:</b>		    	  
+		</div>		    
+	</div>
+	<div class="row">
+		<div class="span12">		    
+		    <b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= @documento.motivo %> </b>	  
+		</div>		    
+	</div>
+
+	</br></br>
+
+	<div id="texto" style="border:1px solid;">
+	  <div class="row texto">
+		<div class="span12">
+		  <b> /.....- <%= @documento.tipo_documento %> -- <%= @documento.anio %> </b>
+		</div>		    
+	  </div>
+	  
+	  	<div class="row texto">
+		    <div class="span12">		      
+		        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Iniciador: </b> <%= @documento.iniciado_por %>		        
+		    </div>
+		</div>
+		<div class="row texto">
+		    <div class="span12">		      
+		        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Localidad: </b> <%= @documento.localidad %>		        
+		    </div>
+		</div>
+		<div class="row texto">
+		    <div class="span12">		      
+		        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Contenido / Extracto: </b> <%= @documento.asunto %>		        
+		    </div>
+		</div>
+		<div class="row texto">
+		    <div class="span12">		      
+		        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Autorizado: </b> <% if @documento.autorizado == true then %> Si <% else %> No <% end %>		        
+		    </div>
+		</div>
+		</br></br>    
+	</div>
+
+	</br></br></br></br>
+
+	<div class="pagination-centered">
+		Atentamente,
+	</div>
+
+	</br></br></br></br></br></br>
+
+	<div>
+		<b>Nota N° <%= @documento.sigla %> / <%= @documento.anio %> Subsecretaria de Coordinación Operativa </b>
+	</div>
+
+
+
