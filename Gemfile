@@ -67,3 +67,5 @@ gem 'pdfkit'
 #gem "sentry-raven", :git => "https://github.com/getsentry/raven-ruby.git"
 
 gem 'kaminari'
+
+gem 'jquery-datatables-rails', git: 'git://github.com/rweng/jquery-datatables-rails.git'
