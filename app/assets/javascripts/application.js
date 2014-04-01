@@ -11,3 +11,5 @@
 //= require jquery-ui
 //= require jquery-ui-timepicker-addon.js
 //= require jquery_nested_form
+//= require dataTables/jquery.dataTables
+//= require dataTables/jquery.dataTables.bootstrap

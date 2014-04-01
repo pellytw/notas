@@ -7,6 +7,7 @@
  *= require tables
  *= require jquery-ui-timepicker-addon
  *= require jquery-ui/ui-lightness
+ *= require dataTables/jquery.dataTables.bootstrap
 */
 @media print {
   body {
