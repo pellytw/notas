@@ -83,4 +83,7 @@ Mysecurity::Application.routes.draw do
   match 'documentos/dar_salida/' => 'documentos#dar_salida' 
   match 'documentos/dar_salida/:idDocumento' => 'documentos#dar_salida'
 
+  match 'documentos/duplicar_documento/' => 'documentos#duplicar_documento' 
+  match 'documentos/duplicar_documento/:idDocumento' => 'documentos#duplicar_documento'
+
 end

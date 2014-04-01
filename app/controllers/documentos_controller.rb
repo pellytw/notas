@@ -159,5 +159,19 @@ class DocumentosController < ApplicationController
     end 
   end
 
+  def duplicar_documento
+    @documento = Documento.find(params[:idDocumento])
+    @documento_nuevo = Documento.create(:fecha_recepcion => @documento.fecha_recepcion, :fecha_documento => @documento.fecha_documento, 
+                                        :anio => @documento.anio, :asunto => @documento.asunto, :autorizado => @documento.autorizado,
+                                        :destinatario => @documento.destinatario, :iniciado_por => @documento.iniciado_por, :localidad_id => @documento.localidad_id, 
+                                        :motivo => @documento.motivo, :nombres_y_apellidos => @documento.nombres_y_apellidos, :nro_documento => @documento.nro_documento,
+                                        :nro_salida => @documento.nro_salida, :observacion => @documento.observacion, :procedencia => @documento.procedencia, 
+                                        :se_encuentra_en => @documento.se_encuentra_en, :sigla => @documento.sigla, :tipo_documento_id => @documento.tipo_documento_id)
+
+    
+    if @documento_nuevo.save then
+      redirect_to "/documentos/"+@documento_nuevo.id.to_s+"/edit"
+    end
+  end
 
 end

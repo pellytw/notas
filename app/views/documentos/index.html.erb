@@ -47,11 +47,12 @@
           <li><%= link_to 'Ver', documento %></li>
           <li><%= link_to 'Editar', edit_documento_path(documento) %></li>
           <li><%= link_to 'Eliminar', documento, method: :delete, data: { confirm: 'Seguro desea eliminar?' } %></li>
-          <% if documento.fecha_salida != nil then %> 
+          <% if documento.fecha_salida == nil then %> 
             <li><a href="/documentos/dar_salida/<%=documento.id%>" target="_blank" data-confirm="¿Seguro desea dar salida a la nota?">Dar Salida</a></li> 
           <% else %>
             <li><a href="/documentos/nota/<%= documento.id%>.pdf">PDF</a></li>
           <% end %>
+          <li><a href="/documentos/duplicar_documento/<%=documento.id%>" target="_blank" data-confirm="¿Seguro desea duplicar el documento?">Duplicar Documento</a></li>
         </ul>
       </div>
     </td>    
