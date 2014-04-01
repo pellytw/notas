@@ -6,6 +6,8 @@ class DocumentosController < ApplicationController
   def index
     @documentos = Documento.all
 
+
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @documentos }

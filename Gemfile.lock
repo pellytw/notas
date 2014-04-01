@@ -70,6 +70,9 @@ GEM
       httparty
     jquery_datepicker (0.4)
     json (1.7.5)
+    kaminari (0.14.1)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     less (2.2.2)
       commonjs (~> 0.2.6)
     less-rails (2.2.6)
@@ -158,6 +161,7 @@ DEPENDENCIES
   jquery-rails
   jquery-ui-themes
   jquery_datepicker
+  kaminari
   less-rails
   mysql
   mysql2

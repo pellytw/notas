@@ -11,11 +11,27 @@
 
 <% @documento = Documento.find(params["idDocumento"]) %>
 
+    <p align="center"><%=link_to image_tag("logo.png")%></p>
+
 
 	<div class="row">
 		<div class="span12">
+		  <div class="pagination-centered">
+		    <b> SUBSECRETARIA DE COORDINACIÓN OPERATIVA </b>
+		  </div>
+		</div>		    
+	</div>
+	<div class="row">
+		<div class="span12">
+		  <div class="pagination-centered">
+		    <b> Teléfono: (0280) 4485-954 / 4482341 al 44 </b>
+		  </div>
+		</div>		    
+	</div><hr style="color: #0056b2;" size="2"><hr/>
+	<div class="row">
+		<div class="span12">
 		  <div class="pull-right">
-		    <b> <%= @documento.fecha_recepcion %> </b>
+		    <b> <%= Util.fecha_a_es(@documento.fecha_salida) %> </b>
 		  </div>
 		</div>		    
 	</div>
@@ -70,7 +86,13 @@
 		        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Autorizado: </b> <% if @documento.autorizado == true then %> Si <% else %> No <% end %>		        
 		    </div>
 		</div>
-		</br></br>    
+		</br></br>		
+	</div></br></br></br>
+
+	<div class="row">
+		<div class="span12">		 
+		    <b>Observación:</b>&nbsp;&nbsp;<%= @documento.observacion %>		    	  
+		</div>		    
 	</div>
 
 	</br></br></br></br>
