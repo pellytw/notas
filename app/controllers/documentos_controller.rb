@@ -6,8 +6,6 @@ class DocumentosController < ApplicationController
   def index
     @documentos = Documento.all
 
-
-
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @documentos }
@@ -48,8 +46,8 @@ class DocumentosController < ApplicationController
 
     respond_to do |format|
       if @documento.save
-        format.html { redirect_to @documento, notice: 'Documento was successfully created.' }
-        format.json { render json: @documento, status: :created, location: @documento }
+        format.html { redirect_to documentos_url, notice: 'Documento creado correctamente.' }
+        format.json { head :no_content }
       else
         format.html { render action: "new" }
         format.json { render json: @documento.errors, status: :unprocessable_entity }
@@ -62,7 +60,6 @@ class DocumentosController < ApplicationController
   def update
     @documento = Documento.find(params[:id])
     @descripcion = ""
-    debugger
     if @documento.fecha_recepcion.to_s != params[:documento][:fecha_recepcion] then
       @descripcion << "fecha de recepcion - "
     end
@@ -125,7 +122,7 @@ class DocumentosController < ApplicationController
           #debugger
           Cambio.create(:user_id => current_user.id, :documento_id => @documento.id, :descripcion => @descripcion)
         end
-        format.html { redirect_to @documento, notice: 'Documento was successfully updated.' }
+        format.html { redirect_to documentos_url, notice: 'Documento actualizado correctamente.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -167,10 +164,20 @@ class DocumentosController < ApplicationController
                                         :motivo => @documento.motivo, :nombres_y_apellidos => @documento.nombres_y_apellidos, :nro_documento => @documento.nro_documento,
                                         :nro_salida => @documento.nro_salida, :observacion => @documento.observacion, :procedencia => @documento.procedencia, 
                                         :se_encuentra_en => @documento.se_encuentra_en, :sigla => @documento.sigla, :tipo_documento_id => @documento.tipo_documento_id)
+    if @documento.documento_anexo.count > 0 then
+      @documento.documento_anexo.each do |da|
+        @documento_anexo_nuevo = DocumentoAnexo.create(:numero => da.numero, :anio => da.anio, :tipo_documento_id => da.tipo_documento_id, :documento_id => @documento_nuevo.id)        
+      end
+    end
 
-    
     if @documento_nuevo.save then
-      redirect_to "/documentos/"+@documento_nuevo.id.to_s+"/edit"
+      if @documento.documento_anexo.count > 0 then
+        if @documento_anexo_nuevo.save then
+          redirect_to "/documentos/"+@documento_nuevo.id.to_s+"/edit"
+        end
+      else
+        redirect_to "/documentos/"+@documento_nuevo.id.to_s+"/edit"
+      end
     end
   end
 
