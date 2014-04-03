@@ -126,7 +126,7 @@ h4,h6{
 
       <div class="row">
         <div class="span12">
-            <span class="label label-default"><h4>Anexo</h4></span>
+            <span class="label label-default"><h4>Adjunto</h4></span>
         </div>
       </div><hr/>
 
@@ -157,14 +157,14 @@ h4,h6{
           </div>
         </div>
         <div class="span3" style="text-align: right;">
-          <%= da.link_to_remove "ELIMINAR ANEXO", :class => "label label-important" %>
+          <%= da.link_to_remove "ELIMINAR ADJUNTO", :class => "label label-important" %>
         </div> 
       </div>
       <% end %>
 
       <div class="row">
         <div class="span12">
-          <span><%= f.link_to_add "AGREGAR ANEXO", :documento_anexo, :class => "label label-success" %></span>
+          <span><%= f.link_to_add "AGREGAR ADJUNTO", :documento_anexo, :class => "label label-success" %></span>
         </div>        
       </div></br>  
 
@@ -229,7 +229,7 @@ h4,h6{
           <div class="control-group success">
             <label class="control-label"><strong>Autorizado:</strong></label>
             <div class="controls">
-              <%= f.check_box :autorizado, :style => "width:100%;" %>
+              <%= f.check_box :autorizado %>
             </div>
           </div>
         </div>        

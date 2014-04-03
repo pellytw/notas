@@ -1,4 +1,6 @@
 class DocumentoAnexosController < ApplicationController
+  before_filter :authenticate_user!
+  load_and_authorize_resource 
   # GET /documento_anexos
   # GET /documento_anexos.json
   def index
