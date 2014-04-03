@@ -12,11 +12,11 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :nombre %><br />
+    <%= f.label :nombre %>
     <%= f.text_field :nombre %>
   </div>
   <div class="field">
-    <%= f.label :region_id %><br />
+    <%= f.label :region_id, "Región" %>
     <%= f.collection_select(:region_id, Region.all, :id, :nombre) %>
   </div>
   <div class="actions">
