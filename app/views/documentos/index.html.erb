@@ -4,10 +4,11 @@
   <thead>
 
   <tr>
-    <th>Doc. principal</th>
-    <th>Doc. Tipo</th>
+    <th>Tipo doc.</th>
+    <th>Nro</th>
+    <th>Anexo tipo</th>
+    <th>Nro anexo</th>
     <th>Procedencia</th>
-    <th>Destinatario</th>
     <th>Asunto</th>
     <th>Apellidos y Nombres</th>
     <th>Fecha recepción</th>
@@ -20,10 +21,11 @@
   
 <% @documentos.each do |documento| %>
 <tr>
-    <td><%= documento.nro_documento %></td>
-    <td><%= documento.tipo_documento%></td>
-    <td><%= documento.procedencia%></td>
-    <td><%= documento.destinatario%></td>
+    <td><%= documento.tipo_documento %></td>
+    <td><%= documento.nro_documento %></td>  
+    <td></td>  
+    <td></td>
+    <td><%= documento.procedencia %></td>
     <td>
         <% if documento.asunto.length > 30 then %>
           <a href="<%= url_for :controller => "documentos", :action => "show", :id => documento.id %>"><%= documento.asunto[0..30].html_safe + "..." %></a>
