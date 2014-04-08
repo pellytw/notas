@@ -7,14 +7,14 @@ class Documento < ActiveRecord::Base
   attr_accessible :documento_anexo_attributes
   accepts_nested_attributes_for :documento_anexo
 
-  validates :fecha_recepcion, :presence => true
-  validates :fecha_documento, :presence => true
-  validates :iniciado_por, :presence => true
-  validates :tipo_documento_id, :presence => true
-  validates :nombres_y_apellidos, :presence => true
-  validates :anio, :presence => true
-  validates :procedencia, :presence => true
-  validates :localidad_id, :presence => true
+  #validates :fecha_recepcion, :presence => true
+  #validates :fecha_documento, :presence => true
+  #validates :iniciado_por, :presence => true
+  #validates :tipo_documento_id, :presence => true
+  #validates :nombres_y_apellidos, :presence => true
+  #validates :anio, :presence => true
+  #validates :procedencia, :presence => true
+  #validates :localidad_id, :presence => true
 
   has_many :cambios
 

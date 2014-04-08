@@ -25,7 +25,13 @@
     <td><%= documento.nro_documento %></td>  
     <td></td>  
     <td></td>
-    <td><%= documento.procedencia %></td>
+    <td>
+      <% if documento.procedencia.length > 30 then %>
+          <a href="<%= url_for :controller => "documentos", :action => "show", :id => documento.id %>"><%= documento.procedencia[0..30].html_safe + "..." %></a>
+        <% else %>
+          <a href="<%= url_for :controller => "documentos", :action => "show", :id => documento.id %>"><%= documento.procedencia.html_safe %></a>
+        <% end %>
+    </td>
     <td>
         <% if documento.asunto.length > 30 then %>
           <a href="<%= url_for :controller => "documentos", :action => "show", :id => documento.id %>"><%= documento.asunto[0..30].html_safe + "..." %></a>
@@ -34,7 +40,13 @@
         <% end %>
     </td>
    
-    <td><%= documento.nombres_y_apellidos%></td>
+    <td>
+      <% if documento.nombres_y_apellidos.length > 25 then %>
+          <a href="<%= url_for :controller => "documentos", :action => "show", :id => documento.id %>"><%= documento.nombres_y_apellidos[0..25].html_safe + "..." %></a>
+        <% else %>
+          <a href="<%= url_for :controller => "documentos", :action => "show", :id => documento.id %>"><%= documento.nombres_y_apellidos.html_safe %></a>
+        <% end %>
+    </td>
 
     <td><%= Util.fecha_a_es(documento.fecha_recepcion) %></td>
     <td><%= Util.fecha_a_es(documento.fecha_salida) %></td>
@@ -76,7 +88,7 @@ $(document).ready(function($) {
           "sDom": "<'row'<'span6'l><'span6'f>r>t<'row'<'span6'i><'span6'p>>",
           "sPaginationType": "bootstrap",
           "aoColumnDefs": [
-            { "bSearchable": false, "aTargets": [ 6,7 ] }
+            { "bSearchable": false, "aTargets": [ 9 ] }
           ],
           "oLanguage": {
                 "sUrl": "language.es.json",

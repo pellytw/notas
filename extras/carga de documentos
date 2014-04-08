@@ -1,3 +1,4 @@
+
 Documento.create(:autorizado => true, :tipo_documento_id => 1, :procedencia => "Ministerio de Gobierno",	:asunto => "Solicitud de Comisión de Servicios", :nombres_y_apellidos => "GRAÑA Edith Isabel")
 Documento.create(:autorizado => true, :tipo_documento_id => 1, :procedencia => "Municipalidad de Trelew", :asunto => "Solicitud de Comisión de Servicios", :nombres_y_apellidos => "CAMPAGNOLI Claudia Patricia")
 Documento.create(:autorizado => true, :tipo_documento_id => 1, :procedencia => "Asociacion de Trabajadores del Estado", :asunto => "Solicitud de Comisión de Servicios", :nombres_y_apellidos => "BARRIA MOYORGA Claudia")
