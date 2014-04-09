@@ -11,6 +11,7 @@
     <th>Procedencia</th>
     <th>Asunto</th>
     <th>Apellidos y Nombres</th>
+    <th>Localidad</th>
     <th>Fecha recepción</th>
     <th>Fecha salida</th>
     <th></th>
@@ -48,6 +49,7 @@
         <% end %>
     </td>
 
+    <td><%= documento.localidad %></td>
     <td><%= Util.fecha_a_es(documento.fecha_recepcion) %></td>
     <td><%= Util.fecha_a_es(documento.fecha_salida) %></td>
 

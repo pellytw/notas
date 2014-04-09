@@ -90,15 +90,17 @@ h4,h6{
       </div>
 
       <div class="row"> 
-        <div class="span3">
+        <div class="span12">
           <div class="control-group success">
             <label class="control-label"><strong>Tipo Documento:</strong></label>
             <div class="controls">
-              <%= f.collection_select(:tipo_documento_id, TipoDocumento.all, :id, :nombre, {}, {:class=>'select_tipo_documento', :id => "select_por_defecto"}) %>
+              <%= f.collection_select(:tipo_documento_id, TipoDocumento.all, :id, :nombre) %>
             </div>
           </div>
         </div>
-        <div class="span3">
+      </div>
+      <div class="row"> 
+        <div class="span4">
           <div class="control-group success">
             <label class="control-label"><strong>Número:</strong></label>
             <div class="controls">
@@ -106,7 +108,7 @@ h4,h6{
             </div>
           </div>
         </div>
-        <div class="span3">
+        <div class="span4">
           <div class="control-group success">
             <label class="control-label"><strong>Sigla:</strong></label>
             <div class="controls">
@@ -114,7 +116,7 @@ h4,h6{
             </div>
           </div>
         </div> 
-        <div class="span3">
+        <div class="span4">
           <div class="control-group success">
             <label class="control-label"><strong>Año:</strong></label>
             <div class="controls">
@@ -132,15 +134,17 @@ h4,h6{
 
       <%= f.fields_for :documento_anexo do |da|%>
       <div class="row"> 
-        <div class="span3">
+        <div class="span12">
           <div class="control-group success">
             <label class="control-label"><strong>Tipo Documento:</strong></label>
             <div class="controls">
-              <%= da.collection_select(:tipo_documento_id, TipoDocumento.all, :id, :nombre, {}, {:class=>'select_tipo_documento'}) %>
+              <%= da.collection_select(:tipo_documento_id, TipoDocumento.all, :id, :nombre) %>
             </div>
           </div>
         </div>
-        <div class="span3">
+      </div>
+      <div class="row"> 
+        <div class="span4">
           <div class="control-group success">
             <label class="control-label"><strong>Número:</strong></label>
             <div class="controls">
@@ -148,7 +152,7 @@ h4,h6{
             </div>
           </div>
         </div>
-        <div class="span3">
+        <div class="span4">
           <div class="control-group success">
             <label class="control-label"><strong>Año:</strong></label>
             <div class="controls">
@@ -156,10 +160,10 @@ h4,h6{
             </div>
           </div>
         </div>
-        <div class="span3" style="text-align: right;">
+        <div class="span4" style="text-align: right;">
           <%= da.link_to_remove "ELIMINAR ADJUNTO", :class => "label label-important" %>
         </div> 
-      </div>
+      </div><hr/>
       <% end %>
 
       <div class="row">
