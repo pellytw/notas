@@ -94,7 +94,7 @@ h4,h6{
           <div class="control-group success">
             <label class="control-label"><strong>Tipo Documento:</strong></label>
             <div class="controls">
-              <%= f.collection_select(:tipo_documento_id, TipoDocumento.all, :id, :nombre, {}, {:class=>'select_tipo_documento'}) %>
+              <%= f.collection_select(:tipo_documento_id, TipoDocumento.all, :id, :nombre, {}, {:class=>'select_tipo_documento', :id => "select_por_defecto"}) %>
             </div>
           </div>
         </div>
@@ -136,7 +136,7 @@ h4,h6{
           <div class="control-group success">
             <label class="control-label"><strong>Tipo Documento:</strong></label>
             <div class="controls">
-              <%= da.collection_select(:tipo_documento_id, TipoDocumento.all, :id, :nombre, {}, {:class=>'select_tipo_documento'}) %>
+              <%= da.collection_select(:tipo_documento_id, TipoDocumento.all, :id, :nombre, {}, {:class=>'select_tipo_documento', :id => 'select_por_defecto'}) %>
             </div>
           </div>
         </div>
@@ -190,7 +190,7 @@ h4,h6{
           <div class="control-group success">
             <label class="control-label"><strong>Localidad:</strong></label>
             <div class="controls">
-              <%= f.collection_select(:localidad_id, Localidad.all, :id, :nombre) %>
+              <%= f.collection_select(:localidad_id, Localidad.all, :id, :nombre, {}, {:id => 'select_por_defecto2'}) %>
             </div>
           </div>
         </div>        
@@ -309,6 +309,19 @@ h4,h6{
     </script>
 
 <% end %>
+
+
+<script type="text/javascript">
+  
+  $('#select_por_defecto').prop('selectedIndex', -1)
+
+</script>
+
+<script type="text/javascript">
+  
+  $('#select_por_defecto2').prop('selectedIndex', -1)
+
+</script>
 
 
 
