@@ -85,10 +85,12 @@ class DocumentosController < ApplicationController
     end    
     if @documento.iniciado_por != params[:documento][:iniciado_por] then
       @descripcion << "iniciado por- "
-    end   
-    if @documento.localidad.id.to_s != params[:documento][:localidad_id] then
-      @descripcion << "localidad - "
-    end     
+    end
+    if @documento.localidad then   
+      if @documento.localidad.id.to_s != params[:documento][:localidad_id] then
+       @descripcion << "localidad - "
+      end
+    end 
     if @documento.motivo != params[:documento][:motivo] then
       @descripcion << "motivo - "
     end      
@@ -110,8 +112,10 @@ class DocumentosController < ApplicationController
     if @documento.sigla != params[:documento][:sigla] then
       @descripcion << "sigla - "
     end
-    if @documento.tipo_documento.id.to_s != params[:documento][:tipo_documento_id] then
-      @descripcion << "tipo documento - "
+    if @documento.tipo_documento_id then
+      if @documento.tipo_documento.id.to_s != params[:documento][:tipo_documento_id] then
+        @descripcion << "tipo documento - "
+      end
     end
 
 
