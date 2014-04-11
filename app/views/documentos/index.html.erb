@@ -24,8 +24,16 @@
 <tr>
     <td><%= documento.tipo_documento %></td>
     <td><%= documento.nro_documento %></td>  
-    <td></td>  
-    <td></td>
+    <td>
+      <% if documento.documento_anexo.count > 0 then %>
+        <%= documento.documento_anexo.first.numero %>
+      <% end %>
+    </td>  
+    <td>
+      <% if documento.documento_anexo.count > 0 then %>
+        <%= documento.documento_anexo.first.tipo_documento %>
+      <% end %>
+    </td>
     <td>
       <% if documento.procedencia.length > 30 then %>
           <a href="<%= url_for :controller => "documentos", :action => "show", :id => documento.id %>"><%= documento.procedencia[0..30].html_safe + "..." %></a>
