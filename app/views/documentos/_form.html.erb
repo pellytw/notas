@@ -1,7 +1,7 @@
 <%= nested_form_for(@documento, multipart: true, :html => { :class => "form-horizontal"}) do |f| %>
   <% if @documento.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@documento.errors.count, "error") %> Han ocurrido que no permiten guardar el Documento </h2>
+      <h2>Han ocurrido errores que no permiten guardar el Documento </h2>
 
       <ul>
       <% @documento.errors.full_messages.each do |msg| %>
@@ -160,9 +160,30 @@ h4,h6{
             </div>
           </div>
         </div>
-        <div class="span4" style="text-align: right;">
-          <%= da.link_to_remove "ELIMINAR ADJUNTO", :class => "label label-important" %>
-        </div> 
+        <div class="span4">
+          <div class="control-group success">
+            <label class="control-label"><strong>Sigla:</strong></label>
+            <div class="controls">
+              <%= da.text_field :sigla, :style => "width:100%;" %>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row"> 
+        <div class="span12">
+          <div class="control-group success">
+            <label class="control-label"><strong>Observación:</strong></label>
+            <div class="controls">
+              <%= da.text_area :observacion, :rows => "3", :style => "width:100%;" %>
+            </div>
+          </div>
+        </div>        
+      </div>       
+      <div class="row">
+        <div class="span12" style="text-align: right;">
+           <%= da.link_to_remove "ELIMINAR ADJUNTO", :class => "label label-important" %>
+        </div>
+      </div>         
       </div><hr/>
       <% end %>
 

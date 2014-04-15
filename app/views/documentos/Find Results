@@ -1,0 +1,13 @@
+Searching 381 files for "han ocurrido"
+
+/home/pregase02/rails_projects/notas/app/views/documentos/_form.html.erb:
+    2    <% if @documento.errors.any? %>
+    3      <div id="error_explanation">
+    4:       <h2>No se puede guardar el documento por los siguientes errores </h2>
+    5  
+    6        <ul>
+
+~/rails_projects/notas/log/development.log:
+    <binary>
+
+2 matches across 2 files
