@@ -3,9 +3,9 @@ class Documento < ActiveRecord::Base
   belongs_to :tipo_documento
   belongs_to :localidad
 
-  has_many :documento_anexo, :dependent => :destroy
+  has_many :documento_anexo#, :dependent => :destroy
   attr_accessible :documento_anexo_attributes
-  accepts_nested_attributes_for :documento_anexo
+  accepts_nested_attributes_for :documento_anexo, allow_destroy: true, reject_if: :all_blank
 
   #validates :fecha_recepcion, :presence => true
   #validates :fecha_documento, :presence => true

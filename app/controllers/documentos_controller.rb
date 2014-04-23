@@ -37,6 +37,7 @@ class DocumentosController < ApplicationController
   # GET /documentos/1/edit
   def edit
     @documento = Documento.find(params[:id])
+    @documento.documento_anexo
   end
 
   # POST /documentos
@@ -122,8 +123,8 @@ class DocumentosController < ApplicationController
     respond_to do |format|
 
       if @documento.update_attributes(params[:documento])
+        
         if @descripcion != "" then
-          #debugger
           Cambio.create(:user_id => current_user.id, :documento_id => @documento.id, :descripcion => @descripcion)
         end
         format.html { redirect_to documentos_url, notice: 'Documento actualizado correctamente.' }
