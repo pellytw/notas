@@ -154,6 +154,7 @@ class DocumentosController < ApplicationController
     @documento.fecha_salida = Time.now
     #obtengo el nro de salida mas grande entre todos los documentos
     @nro_salida_mayor = Documento.order("nro_salida desc").first.nro_salida
+    @documento.nro_anio_salida = Time.now.year
     if @nro_salida_mayor then 
       @documento.nro_salida = @nro_salida_mayor + 1
     else
