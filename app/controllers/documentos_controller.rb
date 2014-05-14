@@ -152,6 +152,13 @@ class DocumentosController < ApplicationController
   def dar_salida
     @documento = Documento.find(params[:idDocumento])
     @documento.fecha_salida = Time.now
+    #obtengo el nro de salida mas grande entre todos los documentos
+    @nro_salida_mayor = Documento.order("nro_salida desc").first.nro_salida
+    if @nro_salida_mayor then 
+      @documento.nro_salida = @nro_salida_mayor + 1
+    else
+      @documento.nro_salida = 1
+    end
     if @documento.save then
       #redirect_to @documento, notice: 'Se ha dado salida a la nota de manera correcta'
       redirect_to "/documentos/nota/"+@documento.id.to_s+".pdf"
