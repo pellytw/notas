@@ -62,7 +62,7 @@
 	<div id="texto" style="border:1px solid;">
 	  <div class="row texto">
 		<div class="span12">
-		  <b> /.....- <%= @documento.tipo_documento %> -- <%= @documento.anio %> </b>
+		  <b> <%= @documento.tipo_documento %> - <%= @documento.nro_documento %>/<%= @documento.anio %> </b>
 		</div>		    
 	  </div>
 	  
@@ -81,11 +81,11 @@
 		        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Contenido / Extracto: </b> <%= @documento.asunto %>		        
 		    </div>
 		</div>
-		<div class="row texto">
+		<!-- <div class="row texto">
 		    <div class="span12">		      
 		        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Autorizado: </b> <% if @documento.autorizado == true then %> Si <% else %> No <% end %>		        
 		    </div>
-		</div>
+		</div> -->
 		</br></br>		
 	</div></br></br></br>
 
@@ -104,8 +104,10 @@
 	</br></br></br></br></br></br>
 
 	<div>
-		<b>Nota N° <%= @documento.sigla %> / <%= @documento.anio %> Subsecretaria de Coordinación Operativa </b>
-	</div>
+		<b>Nota N° <%= @documento.sigla %> / <%= @documento.anio %> </b>		
+	</div></br>
+
+	<b>Subsecretaria de Coordinación Operativa</b>
 
 
 

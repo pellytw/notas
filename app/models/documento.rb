@@ -1,11 +1,13 @@
 class Documento < ActiveRecord::Base
   attr_accessible :anio, :asunto, :autorizado, :destinatario, :fecha_documento, :fecha_recepcion, :fecha_salida, :iniciado_por, :localidad_id, :motivo, :nombres_y_apellidos, :nro_documento, :nro_salida, :observacion, :procedencia, :se_encuentra_en, :sigla, :tipo_documento_id
+  attr_accessible :nro_anio_salida, :nro_salida_bck
+
   belongs_to :tipo_documento
   belongs_to :localidad
 
-  has_many :documento_anexo, :dependent => :destroy
+  has_many :documento_anexo#, :dependent => :destroy
   attr_accessible :documento_anexo_attributes
-  accepts_nested_attributes_for :documento_anexo
+  accepts_nested_attributes_for :documento_anexo, allow_destroy: true, reject_if: :all_blank
 
   #validates :fecha_recepcion, :presence => true
   #validates :fecha_documento, :presence => true

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140415141645) do
+ActiveRecord::Schema.define(:version => 20140514132843) do
 
   create_table "cambios", :force => true do |t|
     t.integer  "documento_id"
@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(:version => 20140415141645) do
 
   create_table "documentos", :force => true do |t|
     t.string   "nro_documento"
-    t.string   "nro_salida"
+    t.integer  "nro_salida"
     t.string   "asunto"
     t.boolean  "autorizado"
     t.text     "observacion"
@@ -54,6 +54,8 @@ ActiveRecord::Schema.define(:version => 20140415141645) do
     t.integer  "localidad_id"
     t.datetime "created_at",          :null => false
     t.datetime "updated_at",          :null => false
+    t.integer  "nro_salida_bck"
+    t.integer  "nro_anio_salida"
   end
 
   create_table "localidades", :force => true do |t|
